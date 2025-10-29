@@ -1,0 +1,97 @@
+{
+    "units": [
+    {
+        "id": 1,
+        "name": "Ûthar le Destiné",
+        "points": 115,
+        "logo": "UtharLeDestine.jpeg",
+        "keywords": ["Infanterie", "Personnage", "Héros Epique", "Ûthar le Destiné"]
+    },
+    {
+        "id": 2,
+        "name": "Kâhl",
+        "points": 90,
+        "logo": "Kahl.jpeg",
+        "keywords": ["Infanterie", "Personnage", "Kâhl"]
+    },
+    {
+        "id": 3,
+        "name": "Champion Einhyr",
+        "points": 75,
+        "logo": "ChampionEinhyr.jpeg",
+        "keywords": ["Infanterie", "Personnage", "Exo-Scaphandre", "Champion Einhyr"]
+    },
+    {
+        "id": 4,
+        "name": "Grimnyr",
+        "points": 75,
+        "logo": "Grimnyr.jpeg",
+        "keywords": ["Infanterie", "Grimnyr", "Personnage", "Psyker"]
+    },
+    {
+        "id": 5,
+        "name": "Maître-Fer Brôkhyr",
+        "points": 75,
+        "logo": "MaitreFerBrokhyr.jpeg",
+        "keywords": ["Infanterie", "Maître-Fer Brôkhyr", "Personnage"]
+    },
+    {
+        "id": 6,
+        "name": "Guerriers Âtrekogs",
+        "points": 135,
+        "logo": "GuerriersAtrekogs.jpeg",
+        "keywords": ["Infanterie", "Ligne", "Grenades", "Guerriers Âtrekogs"],
+        "figurines": 10
+    },
+    {
+        "id": 7,
+        "name": "Âtregardes Einhyr",
+        "points": 165,
+        "logo": "AtregardesEinhyr.jpeg",
+        "keywords": ["Infanterie", "Exo-Scaphandre", "Âtregardes Einhyrs"],
+        "options": [{"name": "Ajouter 5 figurines", "points": 165}],
+        "figurines": 5
+    },
+    {
+        "id": 8,
+        "name": "Beserks Cthoniens",
+        "points": 135,
+        "logo": "BeserksCthoniens.jpeg",
+        "keywords": ["Infanterie", "Beserks Cthoniens"],
+        "options": [{"name":"Ajouter 5 figurines", "points": 135}],
+        "figurines": 5
+    },
+    {
+        "id": 9,
+        "name": "Pionners Hernkogs",
+        "points": 105,
+        "logo": "PionniersHernkogs.jpeg",
+        "keywords": ["Monté", "Grenades", "Vol", "Pionners Hernkogs"],
+        "options": [{"name":"Ajouter 5 figurines", "points": 105}],
+        "figurines": 5
+    },
+    {
+        "id": 10,
+        "name": "Sagitaur",
+        "points": 120,
+        "logo": "Sagitaur.jpeg",
+        "keywords": ["Véhicule", "Transport", "Transport Assigné", "Sagitaur"]
+    },
+    {
+        "id": 11,
+        "name": "Tonnekogs Brokhyrs",
+        "points": 95,
+        "logo": "TonnekogsBrokhyrs.jpeg",
+        "keywords": ["Infanterie", "Exo-Chassis", "Tonnekogs Brokhyrs"],
+        "options": [{"name":"Ajouter 3 figurines", "points": 95}],
+        "figurines": 3
+    },
+    {
+        "id": 12,
+        "name": "Forteresse Mobile Hekaton",
+        "points": 245,
+        "logo": "ForteresseMobileHekaton.jpeg",
+        "keywords": ["Véhicule", "Transport", "Forteresse Mobile Hekaton"]
+    }
+    ]
+}

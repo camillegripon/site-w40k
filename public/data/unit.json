@@ -122,11 +122,11 @@
                     ],
                     "options": [
                         {
-                            "name": "Ajouter 5 figurines",
+                            "name": "Ajouter 3 figurines",
                             "points": 105
                         }
                     ],
-                    "figurines": 5
+                    "figurines": 3
                 },
                 {
                     "id": 10,
@@ -435,7 +435,7 @@
                     "id": 31,
                     "name": "Lucius L'Eternel",
                     "points": 95,
-                    "logo": "LuciusLeternel.jpeg",
+                    "logo": "LuciusLEternel.jpeg",
                     "keywords": [
                         "Infanterie",
                         "Chaos",
@@ -614,7 +614,7 @@
                     "id": 43,
                     "name": "Predator Destructor du Chaos",
                     "points": 130,
-                    "logo": "PredatorDestructorDuchaos.jpeg",
+                    "logo": "PredatorDestructorDuChaos.jpeg",
                     "keywords": [
                         "Infanterie",
                         "Chaos",
@@ -810,7 +810,7 @@
                     "id": 58,
                     "name": "Techmancien",
                     "points": 70,
-                    "logo": "Technmancien.jpeg",
+                    "logo": "Techmancien.jpeg",
                     "keywords": [
                         "Infanterie",
                         "Chaos",
@@ -860,6 +860,182 @@
                         }
                     ],
                     "figurines": 5
+                }
+            ]
+        },
+        {
+            "name": "Deathwatch",
+            "units": [
+                {
+                    "id": 62,
+                    "name": "Capitaine Du Guet Artemis",
+                    "points": 75,
+                    "logo": "CapitaineDuGuetArtemis.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ]
+                },
+                {
+                    "id": 63,
+                    "name": "Corvus Blackstar",
+                    "points": 180,
+                    "logo": "CorvusBlackstar.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ]
+                },
+                {
+                    "id": 64,
+                    "name": "Escouade Terminator Deathwatch",
+                    "points": 210,
+                    "logo": "EscouadeTerminatorDeathwatch.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 210
+                        }
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 65,
+                    "name": "Escouade de Vétérans à Motos",
+                    "points": 85,
+                    "logo": "EscouadeDeVeteransAMotos.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "options": [
+                        {
+                            "name": "Ajouter 3 figurines",
+                            "points": 85
+                        }
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 66,
+                    "name": "Kill Team Cassius",
+                    "points": 255,
+                    "logo": "KillTeamCassius.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 11
+                },
+                {
+                    "id": 67,
+                    "name": "Kill Team Fortis",
+                    "points": 115,
+                    "logo": "KillTeamFortis.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 115
+                        }
+                    ]
+                },
+                {
+                    "id": 68,
+                    "name": "Kill Team Indomitor",
+                    "points": 135,
+                    "logo": "KillTeamIndomitor.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 135
+                        }
+                    ]
+                },
+                {
+                    "id": 69,
+                    "name": "Kill Team Proteus",
+                    "points": 165,
+                    "logo": "KillTeamProteus.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 165
+                        }
+                    ]
+                },
+                {
+                    "id": 70,
+                    "name": "Kill Team Spectrus",
+                    "points": 110,
+                    "logo": "KillTeamSpectrus.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 110
+                        }
+                    ]
+                },
+                {
+                    "id": 71,
+                    "name": "Maître du Guet",
+                    "points": 115,
+                    "logo": "MaitreDuGuet.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ]
+                },
+                {
+                    "id": 72,
+                    "name": "Vétérans Deathwatch",
+                    "points": 100,
+                    "logo": "VeteransDeathwatch.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 100
+                        }
+                    ]
                 }
             ]
         }

@@ -31,9 +31,10 @@ useEffect(() => {
 
     const creerArmee = (unit) => {
         setArmy(e => [...e, unit]);
+        console.log(army, totalPoint);
     }
 
-    const totalPoint = army.reduce((sum, unit) => sum + unit.points, 0);
+    const totalPoint = army.reduce((sum, unit) => sum + (unit.points || 0), 0);
 
 
     return (

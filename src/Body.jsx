@@ -1,25 +1,32 @@
 import '/src/style/body.css';
 import { useEffect, useState, useCallback } from "react";
 
-function Body() {
+function Body({faction}) {
     const [data, setData] = useState({ units: [] });
 
-    useEffect(() => {
-        fetch('/data/unit.json')
-            .then(response => response.json())
-            .then(data => {
-                setData(data);
-                console.log("Données chargées:", data);
-            })
-            .catch(error => console.error("Erreur:", error.message));
-    }, []);
-
+useEffect(() => {
+  fetch('/data/unit.json')
+    .then(response => response.json())
+    .then(data => {
+      const factionData = data.factions.find(f => f.name === faction);
+      if (factionData) {
+        setData({ units: factionData.units });
+      } else {
+        console.error("Faction non trouvée");
+      }
+    })
+    .catch(error => console.error("Erreur:", error));
+}, [faction]);
+  
     const [army, setArmy] = useState([]);
 
     useEffect(() => {
         console.log(army);
     }, [army]);
 
+    const supprimerUnit = (index) => {
+        setArmy(ancienneArmee => ancienneArmee.filter((_, i) => i !== index));
+    };
 
 
     const creerArmee = (unit) => {
@@ -31,9 +38,8 @@ function Body() {
 
     return (
         <div className='body'>
-            <h1 className="titre">Site Warhammer</h1>
-            <p>Choisissez votre armée</p>
-            <img src="/logo/logoVotann.png" alt="Ligues des Votanns" className="logo-faction" />
+
+
 
             <div className='listeArmeeDisponible'>
                 <h2>Unités disponibles</h2>
@@ -61,37 +67,38 @@ function Body() {
                 </ul>
             </div>
             <div className='listeArmeeChoisie'>
-                <table className='tableArmeeChoisie'>
-                    <thead>
-                        <tr>
-                            <td>Unité</td>
-                            <td>Points</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {army.map((unit, index) => (
-                            <tr key={`${unit.id}-${index}`}>
-                                {unit.figurines ? (  
-                                    <>
-                                        <td>{unit.figurines} {unit.name}</td>
-                                        <td>{unit.points}</td>
-                                    </>
-                                ) : (
-                                    <>
-                                        <td>{unit.name}</td> 
-                                        <td>{unit.points}</td>
-                                    </>
-                                )}
-                            </tr>
-                        ))
-                        }
+                <div className='tableArmeeChoisie'>
+                    <div className='hautTableau'>
+                        <div>Unités</div>
+                        <div>Points</div>
+                    </div>
+                    {army.map((unit, index) => (
+                        <div key={`${unit.id}-${index}`} className='armyUnit'>
+                            {unit.figurines ? (
+                                <div className='unitLigne'>
+                                    <div className='unitName'>{unit.figurines} {unit.name}</div>
+                                    <div className='unitPoints'>{unit.points}</div>
+                                    <button className='supprimerUnit' onClick={() => supprimerUnit(index)}>-</button>
+                                </div>
+                            ) : (
 
-                        <tr>
-                            <td>Total</td>
-                            <td>{totalPoint} points</td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <div className='unitLigne'>
+                                    <div className='unitName'>{unit.name}</div>
+                                    <div className='unitPoints'>{unit.points}</div>
+                                    <button className='supprimerUnit' onClick={() => supprimerUnit(index)}>-</button>
+                                </div>
+                            )}
+                        </div>
+
+                    ))
+                    }
+
+                    <div className='ligneTotal'>
+                        <div>Total</div>
+                        <div>{totalPoint} points</div>
+                    </div>
+
+                </div>
             </div>
         </div>
     );

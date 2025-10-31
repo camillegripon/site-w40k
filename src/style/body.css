@@ -12,15 +12,6 @@ body {
   font-family: 'Orbitron', 'Arial', sans-serif; /* Police futuriste */
 }
 
-.titre {
-  color: var(--votann-gold);
-  text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-
 
 /* Style pour la liste des unités */
 .unit-list {
@@ -82,62 +73,94 @@ body {
     width: 150px;
 }
 
-
 .tableArmeeChoisie {
   width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-family: 'Arial', sans-serif;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  overflow: hidden; 
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.hautTableau {
+  display: grid;
+  grid-template-columns: 2fr 1fr 50px;
+  background-color: #2a2a2a;
+  color: white;
+  padding: 12px 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #444;
 }
 
 
-.tableArmeeChoisie thead {
-  background-color: #2a2a2a; 
-  color: #ffffff;
+.armyUnit {
+  border-bottom: 1px solid #eee;
 }
 
-.tableArmeeChoisie th {
-  padding: 12px;
-  text-align: left;
+.armyUnit:last-child {
+  border-bottom: none; 
+}
+
+.unitLigne {
+  display: grid;
+  grid-template-columns: 2fr 1fr 50px;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.2s;
+}
+
+.unitLigne:hover {
+  background-color: #f9f9f9;
+}
+
+
+.unitName {
+  font-weight: 500;
+}
+
+.unitPoints {
+  text-align: right;
+}
+
+
+.supprimerUnit {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.supprimerUnit:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+
+.ligneTotal {
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  background-color: #333;
+  color: white;
+  padding: 12px 10px;
   font-weight: bold;
 }
 
 
-.tableArmeeChoisie tbody tr {
-  border-bottom: 1px solid #dddddd;
-  transition: background-color 0.2s; 
-}
-
-.tableArmeeChoisie tbody tr:hover {
-  background-color: #f1f1f1;
-}
-
-.tableArmeeChoisie td {
-  padding: 10px 12px;
-  text-align: left;
+.hautTableau div,
+.unitLigne div:not(:last-child) {
+  padding: 0 5px;
 }
 
 
-.tableArmeeChoisie tfoot tr {
-  background-color: #333333;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-
-.tableArmeeChoisie tbody tr:nth-child(even) {
-  background-color: #f5f5f5;
-}
-
-.tableArmeeChoisie td:nth-child(2) {
-  color: #d9534f; /* Rouge Warhammer */
-  font-weight: bold;
-}
-
-.tableArmeeChoisie tbody td {
-    color: black;
+.armyUnit .unitLigne div:first-child {
+  padding-left: 0;
 }

@@ -3,6 +3,7 @@ import { useEffect, useState, useCallback } from "react";
 
 function Body({ faction }) {
     const [data, setData] = useState({ units: [] });
+    const [attributs, setAttributs] = useState({ keywords: [] })
 
     useEffect(() => {
         fetch('/data/unit.json')
@@ -11,6 +12,10 @@ function Body({ faction }) {
                 const factionData = data.factions.find(f => f.name === faction);
                 if (factionData) {
                     setData({ units: factionData.units });
+                    console.log(factionData.units);
+                    const listeAttributsSansSet = factionData.units.flatMap(unit => unit.keywords);
+                    const listeAttributs = [...new Set(listeAttributsSansSet)];
+                    setAttributs({ keywords: listeAttributs })
                 } else {
                     console.error("Faction non trouvée");
                 }
@@ -19,6 +24,7 @@ function Body({ faction }) {
     }, [faction]);
 
     const [army, setArmy] = useState([]);
+
 
     useEffect(() => {
         console.log(army);
@@ -47,6 +53,14 @@ function Body({ faction }) {
 
             <div className='listeArmeeDisponible'>
                 <h2>Unités disponibles</h2>
+ {/*             <ul>
+                    {attributs.keywords.map((keywords, index) => (
+                        <li key={index} className='unit-keywords'>
+                            {keywords}
+                        </li>
+                    ))}
+                </ul>
+*/}
                 <ul className="unit-list">
                     {data.units.map(unit => (
                         <li key={unit.id} className="unit-item">
@@ -105,7 +119,7 @@ function Body({ faction }) {
                 </div>
             </div>
             <button className='reset' onClick={() => supprimerListe()}>Reset</button>
-        </div>
+        </div >
     );
 }
 

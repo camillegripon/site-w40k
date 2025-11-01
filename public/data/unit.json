@@ -1447,8 +1447,14 @@
                         "Personnage",
                         "Héros Epique"
                     ],
-"options":[{"name":"Plateforme de Défense Tidewall", "points": 20}]
-                },                {
+                    "options": [
+                        {
+                            "name": "Plateforme de Défense Tidewall",
+                            "points": 20
+                        }
+                    ]
+                },
+                {
                     "id": 104,
                     "name": "Longstrike",
                     "points": 170,
@@ -1480,8 +1486,18 @@
                         "Personnage",
                         "Héros Epique"
                     ],
-"options":[{"name":"Ajouter 1 figurine", "points": 55}, {"name":"Ajouter 2 figurines", "points":110}]
-                },                {
+                    "options": [
+                        {
+                            "name": "Ajouter 1 figurine",
+                            "points": 55
+                        },
+                        {
+                            "name": "Ajouter 2 figurines",
+                            "points": 110
+                        }
+                    ]
+                },
+                {
                     "id": 107,
                     "name": "Sabre de Feu",
                     "points": 50,
@@ -1512,6 +1528,58 @@
                         "Infanterie",
                         "Personnage",
                         "Héros Epique"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Space Marines",
+            "units": [
+                {
+                    "id": 1000,
+                    "name": "Escouade Intercessor de Charles",
+                    "points": 120,
+                    "logo": "EscouadeIntercessor.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 120
+                        }
+                    ]
+                },
+                {
+                    "id": 1001,
+                    "name": "Chapelain de Charles",
+                    "points": 100,
+                    "logo": "Chapelain.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ]
+                },
+                {
+                    "id": 1002,
+                    "name": "Escouade Terminator de Charles",
+                    "points": 205,
+                    "logo": "EscouadeTerminator.jpeg",
+                    "keywords": [
+                        "Infanterie",
+                        "Personnage",
+                        "Héros Epique"
+                    ],
+                    "figurines": 5,
+                    "options": [
+                        {
+                            "name": "Ajouter 5 figurines",
+                            "points": 205
+                        }
                     ]
                 }
             ]

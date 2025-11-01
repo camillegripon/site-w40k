@@ -414,9 +414,7 @@
                     "logo": "HuronBlackheart.jpeg",
                     "keywords": [
                         "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Personnage", "Héros Epique", "Chaos", "Chaos Universel", "Huron Blackheart"
                     ]
                 },
                 {
@@ -487,10 +485,7 @@
                     "points": 70,
                     "logo": "MaitreDeLaPossession.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Infanterie", "Personnage","Psyker", "Chaos", "Maître de la Possession"
                     ]
                 },
                 {
@@ -628,10 +623,7 @@
                     "points": 180,
                     "logo": "PrinceDemonDelHereticusAstartes.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Monstre", "Personnage", "Chaos", "Démon", "Prince Démon"
                     ]
                 },
                 {
@@ -640,10 +632,7 @@
                     "points": 195,
                     "logo": "PrinceDemonDelHereticusAstartesAile.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Monstre", "Vol", "Personnage", "Chaos", "Démon", "Prince Démon Ailé"
                     ]
                 },
                 {
@@ -734,8 +723,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Personnage", "Grenades", "Seigneur du Chaos"
                     ]
                 },
                 {

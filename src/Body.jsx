@@ -3,7 +3,8 @@ import { useEffect, useState, useCallback } from "react";
 
 function Body({ faction }) {
     const [data, setData] = useState({ units: [] });
-    const [attributs, setAttributs] = useState({ keywords: [] })
+    //const [attributs, setAttributs] = useState({ keywords: [] })
+    const [type, setType] = useState("");
 
     useEffect(() => {
         fetch('/data/unit.json')
@@ -15,7 +16,7 @@ function Body({ faction }) {
                     console.log(factionData.units);
                     const listeAttributsSansSet = factionData.units.flatMap(unit => unit.keywords);
                     const listeAttributs = [...new Set(listeAttributsSansSet)];
-                    setAttributs({ keywords: listeAttributs })
+                    //setAttributs({ keywords: listeAttributs })
                 } else {
                     console.error("Faction non trouvée");
                 }
@@ -43,8 +44,18 @@ function Body({ faction }) {
         console.log(army, totalPoint);
     }
 
-    const totalPoint = army.reduce((sum, unit) => sum + (unit.points || 0), 0);
+    const choisirType = (e) => {
 
+        const changement = e.target.textContent;
+        if (changement != "Sans filtre") {
+            setType(changement);
+        } else {
+            setType("")
+        }
+    }
+
+    const totalPoint = army.reduce((sum, unit) => sum + (unit.points || 0), 0);
+    const typeUnite = ["Infanterie", "Véhicule", "Personnage", "Sans filtre"];
 
     return (
         <div className='body'>
@@ -53,7 +64,9 @@ function Body({ faction }) {
 
             <div className='listeArmeeDisponible'>
                 <h2>Unités disponibles</h2>
- {/*             <ul>
+                {/*             
+                        PAS FORCEMENT ADAPTE FINALEMENT
+                <ul>
                     {attributs.keywords.map((keywords, index) => (
                         <li key={index} className='unit-keywords'>
                             {keywords}
@@ -61,27 +74,35 @@ function Body({ faction }) {
                     ))}
                 </ul>
 */}
-                <ul className="unit-list">
-                    {data.units.map(unit => (
-                        <li key={unit.id} className="unit-item">
-                            <img
-                                src={`/image/${faction}/${unit.logo}`}
-                                alt={unit.name}
-                                className="unit-logo"
-                            />
-                            <div className="unit-info">
-                                <h3>{unit.name}</h3>
-                                <p>{unit.points} pts <button onClick={() => creerArmee(unit)}>Ajouter à son armée</button></p>
-                                <div className="unit-keywords">
-                                    {unit.keywords.map((keyword, index) => (
-                                        <span key={index} className="keyword">
-                                            {keyword}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                        </li>
+
+                <ul className='type-list-unit'>
+                    {typeUnite.map(e => (
+                        <li key={e} className='type-unit' onClick={choisirType}>{e}</li>
                     ))}
+                </ul>
+                <ul className="unit-list">
+                    {data.units
+                        .filter(unit => type === "" ? true : unit.keywords.includes(type))
+                        .map(unit => (
+                            <li key={unit.id} className="unit-item">
+                                <img
+                                    src={`/image/${faction}/${unit.logo}`}
+                                    alt={unit.name}
+                                    className="unit-logo"
+                                />
+                                <div className="unit-info">
+                                    <h3>{unit.name}</h3>
+                                    <p>{unit.points} pts <button onClick={() => creerArmee(unit)}>Ajouter à son armée</button></p>
+                                    <div className="unit-keywords">
+                                        {unit.keywords.map((keyword, index) => (
+                                            <span key={index} className="keyword">
+                                                {keyword}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
                 </ul>
             </div>
             <div className='listeArmeeChoisie'>

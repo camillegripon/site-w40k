@@ -28,6 +28,9 @@ useEffect(() => {
         setArmy(ancienneArmee => ancienneArmee.filter((_, i) => i !== index));
     };
 
+    const supprimerListe = (army) => {
+        setArmy([]);
+}
 
     const creerArmee = (unit) => {
         setArmy(e => [...e, unit]);
@@ -101,6 +104,7 @@ useEffect(() => {
 
                 </div>
             </div>
+            <button className='reset'onClick={() => supprimerListe()}>Reset</button>
         </div>
     );
 }

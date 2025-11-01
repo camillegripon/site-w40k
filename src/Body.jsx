@@ -1,23 +1,23 @@
 import '/src/style/body.css';
 import { useEffect, useState, useCallback } from "react";
 
-function Body({faction}) {
+function Body({ faction }) {
     const [data, setData] = useState({ units: [] });
 
-useEffect(() => {
-  fetch('/data/unit.json')
-    .then(response => response.json())
-    .then(data => {
-      const factionData = data.factions.find(f => f.name === faction);
-      if (factionData) {
-        setData({ units: factionData.units });
-      } else {
-        console.error("Faction non trouvée");
-      }
-    })
-    .catch(error => console.error("Erreur:", error));
-}, [faction]);
-  
+    useEffect(() => {
+        fetch('/data/unit.json')
+            .then(response => response.json())
+            .then(data => {
+                const factionData = data.factions.find(f => f.name === faction);
+                if (factionData) {
+                    setData({ units: factionData.units });
+                } else {
+                    console.error("Faction non trouvée");
+                }
+            })
+            .catch(error => console.error("Erreur:", error));
+    }, [faction]);
+
     const [army, setArmy] = useState([]);
 
     useEffect(() => {
@@ -28,9 +28,9 @@ useEffect(() => {
         setArmy(ancienneArmee => ancienneArmee.filter((_, i) => i !== index));
     };
 
-    const supprimerListe = (army) => {
+    const supprimerListe = () => {
         setArmy([]);
-}
+    }
 
     const creerArmee = (unit) => {
         setArmy(e => [...e, unit]);
@@ -51,7 +51,7 @@ useEffect(() => {
                     {data.units.map(unit => (
                         <li key={unit.id} className="unit-item">
                             <img
-                                src={`/logo/${unit.logo}`}
+                                src={`/image/${faction}/${unit.logo}`}
                                 alt={unit.name}
                                 className="unit-logo"
                             />
@@ -104,7 +104,7 @@ useEffect(() => {
 
                 </div>
             </div>
-            <button className='reset'onClick={() => supprimerListe()}>Reset</button>
+            <button className='reset' onClick={() => supprimerListe()}>Reset</button>
         </div>
     );
 }

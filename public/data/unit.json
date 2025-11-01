@@ -403,8 +403,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Grenades", "Hommes-bêtes Affregors"
                     ]
                 },
                 {
@@ -414,7 +413,11 @@
                     "logo": "HuronBlackheart.jpeg",
                     "keywords": [
                         "Infanterie",
-"Personnage", "Héros Epique", "Chaos", "Chaos Universel", "Huron Blackheart"
+                        "Personnage",
+                        "Héros Epique",
+                        "Chaos",
+                        "Chaos Universel",
+                        "Huron Blackheart"
                     ]
                 },
                 {
@@ -423,10 +426,7 @@
                     "points": 255,
                     "logo": "LandRaiderDuChaos.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Transport", "Fumée", "Chaos", "Land Raider"
                     ]
                 },
                 {
@@ -437,8 +437,10 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+                        "Personnage",
+                        "Héros Epique",
+                        "Slaanesh",
+                        "Lucius L'Eternel"
                     ]
                 },
                 {
@@ -449,8 +451,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Ligne", "Grenades", "Légionnaires"
                     ],
                     "options": [
                         {
@@ -468,8 +469,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Grenades", "Slaanesh", "Marines du Vacarme"
                     ],
                     "options": [
                         {
@@ -485,7 +485,11 @@
                     "points": 70,
                     "logo": "MaitreDeLaPossession.jpeg",
                     "keywords": [
-"Infanterie", "Personnage","Psyker", "Chaos", "Maître de la Possession"
+                        "Infanterie",
+                        "Personnage",
+                        "Psyker",
+                        "Chaos",
+                        "Maître de la Possession"
                     ]
                 },
                 {
@@ -496,8 +500,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Personnage", "Grenades", "Maître des Executions"
                     ]
                 },
                 {
@@ -505,11 +508,8 @@
                     "name": "Motards du Chaos",
                     "points": 95,
                     "logo": "MotardsDuChaos.jpeg",
-                    "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+                    "keywords":[
+"Monté", "Grenades", "Chaos", "Motards du Chaos"
                     ],
                     "options": [
                         {
@@ -525,10 +525,7 @@
                     "points": 155,
                     "logo": "Metabrutus.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Marcheur", "Chaos", "Métabrutus"
                     ]
                 },
                 {
@@ -537,10 +534,7 @@
                     "points": 205,
                     "logo": "Metadrak.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Vol", "Aérodyne", "Chaos", "Démon", "Métadrak"
                     ]
                 },
                 {
@@ -549,10 +543,7 @@
                     "points": 140,
                     "logo": "Metaragne.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Marcheur", "Chaos", "Démon", "Métaragne"
                     ]
                 },
                 {
@@ -563,8 +554,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Démon", "Obliterators"
                     ],
                     "options": [
                         {
@@ -582,8 +572,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Démon", "Possédés"
                     ],
                     "options": [
                         {
@@ -599,10 +588,7 @@
                     "points": 135,
                     "logo": "PredatorAnnihilatorDuChaos.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Fumée", "Chaos", "Predator Annihilator"
                     ]
                 },
                 {
@@ -611,10 +597,7 @@
                     "points": 130,
                     "logo": "PredatorDestructorDuChaos.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Fumée", "Chaos", "Predator Destructor"
                     ]
                 },
                 {
@@ -623,7 +606,11 @@
                     "points": 180,
                     "logo": "PrinceDemonDelHereticusAstartes.jpeg",
                     "keywords": [
-"Monstre", "Personnage", "Chaos", "Démon", "Prince Démon"
+                        "Monstre",
+                        "Personnage",
+                        "Chaos",
+                        "Démon",
+                        "Prince Démon"
                     ]
                 },
                 {
@@ -632,7 +619,12 @@
                     "points": 195,
                     "logo": "PrinceDemonDelHereticusAstartesAile.jpeg",
                     "keywords": [
-"Monstre", "Vol", "Personnage", "Chaos", "Démon", "Prince Démon Ailé"
+                        "Monstre",
+                        "Vol",
+                        "Personnage",
+                        "Chaos",
+                        "Démon",
+                        "Prince Démon Ailé"
                     ]
                 },
                 {
@@ -641,10 +633,7 @@
                     "points": 210,
                     "logo": "Profanateur.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+   "Véhicule", "Fumée", "Chaos","Marcheur", "Démon", "Profanateur"
                     ]
                 },
                 {
@@ -655,8 +644,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Vol", "Réacteur Dorsal", "Rapaces"
                     ],
                     "options": [
                         {
@@ -672,10 +660,7 @@
                     "points": 80,
                     "logo": "RejetonsDuChaos.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Bête", "Chaos", "Rejetons du Chaos"
                     ],
                     "figurines": 2
                 },
@@ -685,10 +670,7 @@
                     "points": 85,
                     "logo": "RhinoDuChaos.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Transport", "Transport Assigné", "Fumée", "Chaos", "Rhino"
                     ]
                 },
                 {
@@ -697,10 +679,11 @@
                     "points": 220,
                     "logo": "SeigneurDeLaDiscordeSurMetarodeur.jpeg",
                     "keywords": [
-                        "Infanterie",
+                        "Monté",
+                        "Personnage",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+                        "Démon",
+                        "Seigneur de la Discorde"
                     ]
                 },
                 {
@@ -709,10 +692,7 @@
                     "points": 420,
                     "logo": "SeigneurDesCranesDeKhorne.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Titanesque", "Imposant", "Chaos", "Khorne", "Démon", "Seigneur des Crânes"
                     ]
                 },
                 {
@@ -723,7 +703,9 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Personnage", "Grenades", "Seigneur du Chaos"
+                        "Personnage",
+                        "Grenades",
+                        "Seigneur du Chaos"
                     ]
                 },
                 {
@@ -735,7 +717,8 @@
                         "Infanterie",
                         "Chaos",
                         "Terminator",
-                        "Escouade Terminator du Chaos"
+                        "Personnage",
+                        "Seigneur du Chaos en Armure Terminator"
                     ]
                 },
                 {
@@ -746,8 +729,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Vol", "Réacteur Dorsal","Démon", "Serres du Warp"
                     ],
                     "options": [
                         {
@@ -765,8 +747,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Grenades", "Sombre Communion", "Personnage", "Démagogue de Culte", "Psyker"
                     ],
                     "figurines": 5
                 },
@@ -778,8 +759,10 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+                        "Personnage",
+                        "Psyker",
+                        "Grenades",
+                        "Sorcier"
                     ]
                 },
                 {
@@ -790,8 +773,10 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
+                        "Personnage",
+                        "Psyker",
                         "Terminator",
-                        "Escouade Terminator du Chaos"
+                        "Sorcier en Armure Terminator"
                     ]
                 },
                 {
@@ -802,8 +787,8 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+                        "Personnage",
+                        "Techmancien"
                     ]
                 },
                 {
@@ -812,10 +797,7 @@
                     "points": 225,
                     "logo": "VashtorrLArkifane.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Monstre", "Personnage", "Héros Epique", "Vol", "Chaos", "Démon", "Vashtorr l'Arkifane"
                     ]
                 },
                 {
@@ -824,10 +806,7 @@
                     "points": 210,
                     "logo": "VindicatorDuChaos.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Véhicule", "Fumée", "Chaos", "Vindicator"
                     ]
                 },
                 {
@@ -838,8 +817,7 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-                        "Terminator",
-                        "Escouade Terminator du Chaos"
+"Grenades", "Elus"
                     ],
                     "options": [
                         {

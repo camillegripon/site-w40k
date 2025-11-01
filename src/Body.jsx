@@ -47,7 +47,7 @@ function Body({ faction }) {
     const choisirType = (e) => {
 
         const changement = e.target.textContent;
-        if (changement != "Sans filtre") {
+        if (changement !== "Sans filtre") {
             setType(changement);
         } else {
             setType("")

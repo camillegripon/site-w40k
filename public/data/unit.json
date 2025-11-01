@@ -1538,7 +1538,7 @@
                 {
                     "id": 1000,
                     "name": "Escouade Intercessor de Charles",
-                    "points": 120,
+                    "points": 95,
                     "logo": "EscouadeIntercessor.jpeg",
                     "keywords": [
                         "Infanterie",
@@ -1549,7 +1549,7 @@
                     "options": [
                         {
                             "name": "Ajouter 5 figurines",
-                            "points": 120
+                            "points": 95
                         }
                     ]
                 },

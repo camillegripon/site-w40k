@@ -403,7 +403,8 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Grenades", "Hommes-bêtes Affregors"
+                        "Grenades",
+                        "Hommes-bêtes Affregors"
                     ]
                 },
                 {
@@ -426,7 +427,11 @@
                     "points": 255,
                     "logo": "LandRaiderDuChaos.jpeg",
                     "keywords": [
-"Véhicule", "Transport", "Fumée", "Chaos", "Land Raider"
+                        "Véhicule",
+                        "Transport",
+                        "Fumée",
+                        "Chaos",
+                        "Land Raider"
                     ]
                 },
                 {
@@ -451,7 +456,9 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Ligne", "Grenades", "Légionnaires"
+                        "Ligne",
+                        "Grenades",
+                        "Légionnaires"
                     ],
                     "options": [
                         {
@@ -469,7 +476,9 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Grenades", "Slaanesh", "Marines du Vacarme"
+                        "Grenades",
+                        "Slaanesh",
+                        "Marines du Vacarme"
                     ],
                     "options": [
                         {
@@ -500,7 +509,9 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Personnage", "Grenades", "Maître des Executions"
+                        "Personnage",
+                        "Grenades",
+                        "Maître des Executions"
                     ]
                 },
                 {
@@ -508,8 +519,11 @@
                     "name": "Motards du Chaos",
                     "points": 95,
                     "logo": "MotardsDuChaos.jpeg",
-                    "keywords":[
-"Monté", "Grenades", "Chaos", "Motards du Chaos"
+                    "keywords": [
+                        "Monté",
+                        "Grenades",
+                        "Chaos",
+                        "Motards du Chaos"
                     ],
                     "options": [
                         {
@@ -525,7 +539,10 @@
                     "points": 155,
                     "logo": "Metabrutus.jpeg",
                     "keywords": [
-"Véhicule", "Marcheur", "Chaos", "Métabrutus"
+                        "Véhicule",
+                        "Marcheur",
+                        "Chaos",
+                        "Métabrutus"
                     ]
                 },
                 {
@@ -534,7 +551,12 @@
                     "points": 205,
                     "logo": "Metadrak.jpeg",
                     "keywords": [
-"Véhicule", "Vol", "Aérodyne", "Chaos", "Démon", "Métadrak"
+                        "Véhicule",
+                        "Vol",
+                        "Aérodyne",
+                        "Chaos",
+                        "Démon",
+                        "Métadrak"
                     ]
                 },
                 {
@@ -543,7 +565,11 @@
                     "points": 140,
                     "logo": "Metaragne.jpeg",
                     "keywords": [
-"Véhicule", "Marcheur", "Chaos", "Démon", "Métaragne"
+                        "Véhicule",
+                        "Marcheur",
+                        "Chaos",
+                        "Démon",
+                        "Métaragne"
                     ]
                 },
                 {
@@ -554,7 +580,8 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Démon", "Obliterators"
+                        "Démon",
+                        "Obliterators"
                     ],
                     "options": [
                         {
@@ -572,7 +599,8 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Démon", "Possédés"
+                        "Démon",
+                        "Possédés"
                     ],
                     "options": [
                         {
@@ -588,7 +616,10 @@
                     "points": 135,
                     "logo": "PredatorAnnihilatorDuChaos.jpeg",
                     "keywords": [
-"Véhicule", "Fumée", "Chaos", "Predator Annihilator"
+                        "Véhicule",
+                        "Fumée",
+                        "Chaos",
+                        "Predator Annihilator"
                     ]
                 },
                 {
@@ -597,7 +628,10 @@
                     "points": 130,
                     "logo": "PredatorDestructorDuChaos.jpeg",
                     "keywords": [
-"Véhicule", "Fumée", "Chaos", "Predator Destructor"
+                        "Véhicule",
+                        "Fumée",
+                        "Chaos",
+                        "Predator Destructor"
                     ]
                 },
                 {
@@ -633,7 +667,12 @@
                     "points": 210,
                     "logo": "Profanateur.jpeg",
                     "keywords": [
-   "Véhicule", "Fumée", "Chaos","Marcheur", "Démon", "Profanateur"
+                        "Véhicule",
+                        "Fumée",
+                        "Chaos",
+                        "Marcheur",
+                        "Démon",
+                        "Profanateur"
                     ]
                 },
                 {
@@ -644,7 +683,9 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Vol", "Réacteur Dorsal", "Rapaces"
+                        "Vol",
+                        "Réacteur Dorsal",
+                        "Rapaces"
                     ],
                     "options": [
                         {
@@ -660,7 +701,9 @@
                     "points": 80,
                     "logo": "RejetonsDuChaos.jpeg",
                     "keywords": [
-"Bête", "Chaos", "Rejetons du Chaos"
+                        "Bête",
+                        "Chaos",
+                        "Rejetons du Chaos"
                     ],
                     "figurines": 2
                 },
@@ -670,7 +713,12 @@
                     "points": 85,
                     "logo": "RhinoDuChaos.jpeg",
                     "keywords": [
-"Véhicule", "Transport", "Transport Assigné", "Fumée", "Chaos", "Rhino"
+                        "Véhicule",
+                        "Transport",
+                        "Transport Assigné",
+                        "Fumée",
+                        "Chaos",
+                        "Rhino"
                     ]
                 },
                 {
@@ -692,7 +740,13 @@
                     "points": 420,
                     "logo": "SeigneurDesCranesDeKhorne.jpeg",
                     "keywords": [
-"Véhicule", "Titanesque", "Imposant", "Chaos", "Khorne", "Démon", "Seigneur des Crânes"
+                        "Véhicule",
+                        "Titanesque",
+                        "Imposant",
+                        "Chaos",
+                        "Khorne",
+                        "Démon",
+                        "Seigneur des Crânes"
                     ]
                 },
                 {
@@ -729,7 +783,10 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Vol", "Réacteur Dorsal","Démon", "Serres du Warp"
+                        "Vol",
+                        "Réacteur Dorsal",
+                        "Démon",
+                        "Serres du Warp"
                     ],
                     "options": [
                         {
@@ -747,7 +804,11 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Grenades", "Sombre Communion", "Personnage", "Démagogue de Culte", "Psyker"
+                        "Grenades",
+                        "Sombre Communion",
+                        "Personnage",
+                        "Démagogue de Culte",
+                        "Psyker"
                     ],
                     "figurines": 5
                 },
@@ -797,7 +858,13 @@
                     "points": 225,
                     "logo": "VashtorrLArkifane.jpeg",
                     "keywords": [
-"Monstre", "Personnage", "Héros Epique", "Vol", "Chaos", "Démon", "Vashtorr l'Arkifane"
+                        "Monstre",
+                        "Personnage",
+                        "Héros Epique",
+                        "Vol",
+                        "Chaos",
+                        "Démon",
+                        "Vashtorr l'Arkifane"
                     ]
                 },
                 {
@@ -806,7 +873,10 @@
                     "points": 210,
                     "logo": "VindicatorDuChaos.jpeg",
                     "keywords": [
-"Véhicule", "Fumée", "Chaos", "Vindicator"
+                        "Véhicule",
+                        "Fumée",
+                        "Chaos",
+                        "Vindicator"
                     ]
                 },
                 {
@@ -817,7 +887,8 @@
                     "keywords": [
                         "Infanterie",
                         "Chaos",
-"Grenades", "Elus"
+                        "Grenades",
+                        "Elus"
                     ],
                     "options": [
                         {
@@ -1502,50 +1573,1128 @@
             "name": "Space Marines",
             "units": [
                 {
-                    "id": 1000,
-                    "name": "Escouade Intercessor de Charles",
-                    "points": 95,
-                    "logo": "EscouadeIntercessor.jpeg",
-                    "keywords": [
-                        "Infanterie",
-                        "Personnage",
-                        "Héros Epique"
-                    ],
-                    "figurines": 5,
-                    "options": [
-                        {
-                            "name": "Ajouter 5 figurines",
-                            "points": 95
-                        }
-                    ]
-                },
-                {
-                    "id": 1001,
-                    "name": "Chapelain de Charles",
+                    "id": 73,
+                    "name": "Adrax Agatone",
+                    "logo": "AdraxAgatone.jpeg",
                     "points": 100,
-                    "logo": "Chapelain.jpeg",
                     "keywords": [
-                        "Infanterie",
-                        "Personnage",
-                        "Héros Epique"
+                        "Space Marines"
                     ]
                 },
                 {
-                    "id": 1002,
-                    "name": "Escouade Terminator de Charles",
-                    "points": 205,
-                    "logo": "EscouadeTerminator.jpeg",
+                    "id": 74,
+                    "name": "Apothicaire Biologis",
+                    "logo": "ApothicaireBiologis.jpeg",
+                    "points": 55,
                     "keywords": [
-                        "Infanterie",
-                        "Personnage",
-                        "Héros Epique"
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 75,
+                    "name": "Apothicaire Primaris",
+                    "logo": "ApothicairePrimaris.jpeg",
+                    "points": 55,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 76,
+                    "name": "Archiviste",
+                    "logo": "Archiviste.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 77,
+                    "name": "Archiviste à Réacteur Dorsal",
+                    "logo": "ArchivisteaReacteurDorsal.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 78,
+                    "name": "Archiviste Primaris",
+                    "logo": "ArchivistePrimaris.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 79,
+                    "name": "Archiviste en Armure Phobos",
+                    "logo": "ArchivisteenArmurePhobos.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 80,
+                    "name": "Archiviste en Armure Terminator",
+                    "logo": "ArchivisteenArmureTerminator.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 81,
+                    "name": "Bunker Hammerfall",
+                    "logo": "BunkerHammerfall.jpeg",
+                    "points": 210,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 82,
+                    "name": "Canon Thunderfire",
+                    "logo": "CanonThunderfire.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
                     ],
-                    "figurines": 5,
-                    "options": [
-                        {
-                            "name": "Ajouter 5 figurines",
-                            "points": 205
-                        }
+                    "figurines": 2
+                },
+                {
+                    "id": 83,
+                    "name": "Capitaine",
+                    "logo": "Capitaine.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 84,
+                    "name": "Capitaine Primaris",
+                    "logo": "CapitainePrimaris.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 85,
+                    "name": "Capitaine Sicarius",
+                    "logo": "CapitaineSicarius.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 86,
+                    "name": "Capitaine en Armure Gravis",
+                    "logo": "CapitaineenArmureGravis.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 87,
+                    "name": "Capitaine en Armure Phobos",
+                    "logo": "CapitaineenArmurePhobos.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 88,
+                    "name": "Capitaine en Armure Terminator",
+                    "logo": "CapitaineenArmureTerminator.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 89,
+                    "name": "Capitaine à Moto",
+                    "logo": "CapitaineaMoto.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 90,
+                    "name": "Capitaine à Réacteur Dorsal",
+                    "logo": "CapitaineaReacteurDorsal.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 91,
+                    "name": "Champion de Compagnie Primaris",
+                    "logo": "ChampiondeCompagniePrimaris.jpeg",
+                    "points": 55,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 92,
+                    "name": "Chapelain",
+                    "logo": "Chapelain.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 93,
+                    "name": "Chapelain Cassius",
+                    "logo": "ChapelainCassius.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 94,
+                    "name": "Chapelain Primaris",
+                    "logo": "ChapelainPrimaris.jpeg",
+                    "points": 65,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 95,
+                    "name": "Chapelain en Armure Terminator",
+                    "logo": "ChapelainenArmureTerminator.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 96,
+                    "name": "Chapelain à Moto",
+                    "logo": "ChapelainaMoto.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 97,
+                    "name": "Chapelain à Réacteur Dorsal",
+                    "logo": "ChapelainaReacteurDorsal.jpeg",
+                    "points": 85,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 98,
+                    "name": "Darnath Lysander",
+                    "logo": "DarnathLysander.jpeg",
+                    "points": 115,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 99,
+                    "name": "Doyen Bladeguard",
+                    "logo": "DoyenBladeguard.jpeg",
+                    "points": 50,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 100,
+                    "name": "Doyen Primaris",
+                    "logo": "DoyenPrimaris.jpeg",
+                    "points": 55,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 101,
+                    "name": "Doyen en Armure Terminator",
+                    "logo": "DoyenenArmureTerminator.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 102,
+                    "name": "Dreadnought",
+                    "logo": "Dreadnought.jpeg",
+                    "points": 160,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 103,
+                    "name": "Dreadnought Ballistus",
+                    "logo": "DreadnoughtBallistus.jpeg",
+                    "points": 170,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 104,
+                    "name": "Dreadnought Brutalis",
+                    "logo": "DreadnoughtBrutalis.jpeg",
+                    "points": 220,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 105,
+                    "name": "Dreadnought Contemptor",
+                    "logo": "DreadnoughtContemptor.jpeg",
+                    "points": 170,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 106,
+                    "name": "Dreadnought Ironclad",
+                    "logo": "DreadnoughtIronclad.jpeg",
+                    "points": 150,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 107,
+                    "name": "Dreadnought Redemptor",
+                    "logo": "DreadnoughtRedemptor.jpeg",
+                    "points": 225,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 108,
+                    "name": "Escorteur Stormraven",
+                    "logo": "EscorteurStormraven.jpeg",
+                    "points": 255,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 109,
+                    "name": "Escorteur Stormtalon",
+                    "logo": "EscorteurStormtalon.jpeg",
+                    "points": 175,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 110,
+                    "name": "Escouade Aggressor",
+                    "logo": "EscouadeAggressor.jpeg",
+                    "points": 110,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 111,
+                    "name": "Escouade Centurion Devastator",
+                    "logo": "EscouadeCenturionDevastator.jpeg",
+                    "points": 205,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 112,
+                    "name": "Escouade d’Assaut",
+                    "logo": "EscouadedAssaut.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 113,
+                    "name": "Escouade d’Assaut Centurion",
+                    "logo": "EscouadedAssautCenturion.jpeg",
+                    "points": 175,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 114,
+                    "name": "Escouade d’Assaut Intercessor",
+                    "logo": "EscouadedAssautIntercessor.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 115,
+                    "name": "Escouade d’Assaut Terminator",
+                    "logo": "EscouadedAssautTerminator.jpeg",
+                    "points": 200,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 116,
+                    "name": "Escouade d’Assaut à Réacteurs Dorsaux",
+                    "logo": "EscouadedAssautaReacteursDorsaux.jpeg",
+                    "points": 115,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 117,
+                    "name": "Escouade d’État-major",
+                    "logo": "EscouadedEtatMajor.jpeg",
+                    "points": 165,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 118,
+                    "name": "Escouade Desolator",
+                    "logo": "EscouadeDesolator.jpeg",
+                    "points": 120,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 119,
+                    "name": "Escouade Devastator",
+                    "logo": "EscouadeDevastator.jpeg",
+                    "points": 120,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 120,
+                    "name": "Escouade Eliminator",
+                    "logo": "EscouadeEliminator.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 121,
+                    "name": "Escouade Eradicator",
+                    "logo": "EscouadeEradicator.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 122,
+                    "name": "Escouade Hellblaster",
+                    "logo": "EscouadeHellblaster.jpeg",
+                    "points": 125,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 123,
+                    "name": "Escouade Inceptor",
+                    "logo": "EscouadeInceptor.jpeg",
+                    "points": 115,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 124,
+                    "name": "Escouade Incursor",
+                    "logo": "EscouadeIncursor.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 125,
+                    "name": "Escouade Infernus",
+                    "logo": "EscouadeInfernus.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 126,
+                    "name": "Escouade Infiltrator",
+                    "logo": "EscouadeInfiltrator.jpeg",
+                    "points": 90,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 127,
+                    "name": "Escouade Intercessor",
+                    "logo": "EscouadeIntercessor.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 128,
+                    "name": "Escouade Lourde Intercessor",
+                    "logo": "EscouadeLourdeIntercessor.jpeg",
+                    "points": 110,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 129,
+                    "name": "Escouade Outrider",
+                    "logo": "EscouadeOutrider.jpeg",
+                    "points": 115,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 130,
+                    "name": "Escouade Reiver",
+                    "logo": "EscouadeReiver.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 131,
+                    "name": "Escouade Suppressor",
+                    "logo": "EscouadeSuppressor.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 132,
+                    "name": "Escouade Tactique",
+                    "logo": "EscouadeTactique.jpeg",
+                    "points": 175,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 10
+                },
+                {
+                    "id": 133,
+                    "name": "Escouade Terminator",
+                    "logo": "EscouadeTerminator.jpeg",
+                    "points": 205,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 134,
+                    "name": "Escouade Terminator Relic",
+                    "logo": "EscouadeTerminatorRelic.jpeg",
+                    "points": 200,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 135,
+                    "name": "Escouade de Motos",
+                    "logo": "EscouadedeMotos.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 141,
+                    "name": "Escouade de Motos Scouts",
+                    "logo": "EscouadedeMotosScouts.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 193,
+                    "name": "Escouade de Motos d’Assaut",
+                    "logo": "EscouadedeMotosdAssaut.jpeg",
+                    "points": 55,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 136,
+                    "name": "Escouade de Scouts",
+                    "logo": "EscouadedeScouts.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 137,
+                    "name": "Escouade de Scouts Snipers",
+                    "logo": "EscouadedeScoutsSnipers.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 138,
+                    "name": "Escouade de Vétérans Bladeguards",
+                    "logo": "EscouadedeVeteransBladeguards.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 139,
+                    "name": "Escouade de Vétérans Sternguards",
+                    "logo": "EscouadedeVeteransSternguards.jpeg",
+                    "points": 105,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 140,
+                    "name": "Escouade de Vétérans Vanguards à Réacteurs Dorsaux",
+                    "logo": "EscouadedeVeteransVanguardsAReacteursDorsaux.jpeg",
+                    "points": 120,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 142,
+                    "name": "Exo-harnais Tactique Invictor",
+                    "logo": "Exo-harnaisTactiqueInvictor.jpeg",
+                    "points": 160,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 143,
+                    "name": "Gladiator Lancer",
+                    "logo": "GladiatorLancer.jpeg",
+                    "points": 145,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 144,
+                    "name": "Gladiator Reaper",
+                    "logo": "GladiatorReaper.jpeg",
+                    "points": 155,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 145,
+                    "name": "Gladiator Valiant",
+                    "logo": "GladiatorValiant.jpeg",
+                    "points": 155,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 146,
+                    "name": "Hunter",
+                    "logo": "Hunter.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 147,
+                    "name": "Impulsor",
+                    "logo": "Impulsor.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 148,
+                    "name": "Intercepteur Stormhawk",
+                    "logo": "IntercepteurStormhawk.jpeg",
+                    "points": 165,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 149,
+                    "name": "Judicateur",
+                    "logo": "Judicateur.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 150,
+                    "name": "Kayvaan Shrike",
+                    "logo": "KayvaanShrike.jpeg",
+                    "points": 110,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 151,
+                    "name": "Kor’sarro Khan",
+                    "logo": "KorsarroKhan.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 152,
+                    "name": "Land Raider",
+                    "logo": "LandRaider.jpeg",
+                    "points": 275,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 153,
+                    "name": "Land Raider Crusader",
+                    "logo": "LandRaiderCrusader.jpeg",
+                    "points": 255,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 154,
+                    "name": "Land Raider Redeemer",
+                    "logo": "LandRaiderRedeemer.jpeg",
+                    "points": 295,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 155,
+                    "name": "Land Speeder",
+                    "logo": "LandSpeeder.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 156,
+                    "name": "Land Speeder Storm",
+                    "logo": "LandSpeederStorm.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 157,
+                    "name": "Land Speeder Tornado",
+                    "logo": "LandSpeederTornado.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 158,
+                    "name": "Land Speeder Typhoon",
+                    "logo": "LandSpeederTyphoon.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 159,
+                    "name": "Lieutenant",
+                    "logo": "Lieutenant.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 160,
+                    "name": "Lieutenant avec Arme Combinée",
+                    "logo": "LieutenantavecArmeCombinee.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 161,
+                    "name": "Lieutenant Primaris",
+                    "logo": "LieutenantPrimaris.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 162,
+                    "name": "Lieutenant en Armure Phobos",
+                    "logo": "LieutenantenArmurePhobos.jpeg",
+                    "points": 60,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 163,
+                    "name": "Lieutenant en Armure Reiver",
+                    "logo": "LieutenantenArmureReiver.jpeg",
+                    "points": 65,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 164,
+                    "name": "Marneus Calgar",
+                    "logo": "MarneusCalgar.jpeg",
+                    "points": 205,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 3
+                },
+                {
+                    "id": 165,
+                    "name": "Maître Archiviste Tigurius",
+                    "logo": "MaitreArchivisteTigurius.jpeg",
+                    "points": 85,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 166,
+                    "name": "Module de Largage",
+                    "logo": "ModuledeLargage.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 167,
+                    "name": "Pedro Kantor",
+                    "logo": "PedroKantor.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 168,
+                    "name": "Predator Annihilator",
+                    "logo": "PredatorAnnihilator.jpeg",
+                    "points": 130,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 169,
+                    "name": "Predator Destructor",
+                    "logo": "PredatorDestructor.jpeg",
+                    "points": 135,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 170,
+                    "name": "Quad Invader",
+                    "logo": "QuadInvader.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 171,
+                    "name": "Razorback",
+                    "logo": "Razorback.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 172,
+                    "name": "Repulsor",
+                    "logo": "Repulsor.jpeg",
+                    "points": 195,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 173,
+                    "name": "Repulsor Executioner",
+                    "logo": "RepulsorExecutioner.jpeg",
+                    "points": 230,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 174,
+                    "name": "Rhino",
+                    "logo": "Rhino.jpeg",
+                    "points": 85,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 175,
+                    "name": "Roboute Guilliman",
+                    "logo": "RobouteGuilliman.jpeg",
+                    "points": 355,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 176,
+                    "name": "Révérend de Fer Feirros",
+                    "logo": "ReverenddeFerFeirros.jpeg",
+                    "points": 105,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 177,
+                    "name": "Sergent Chronus",
+                    "logo": "SergentChronus.jpeg",
+                    "points": 75,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 178,
+                    "name": "Sergent Telion",
+                    "logo": "SergentTelion.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 179,
+                    "name": "Servitors de l’Astartes",
+                    "logo": "Servitorsdel’Astartes.jpeg",
+                    "points": 55,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 4
+                },
+                {
+                    "id": 180,
+                    "name": "Servo-tourelles Firestrike",
+                    "logo": "Servo-tourellesFirestrike.jpeg",
+                    "points": 80,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 181,
+                    "name": "Stalker",
+                    "logo": "Stalker.jpeg",
+                    "points": 140,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 182,
+                    "name": "Storm Speeder Hailstrike",
+                    "logo": "StormSpeederHailstrike.jpeg",
+                    "points": 130,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 183,
+                    "name": "Storm Speeder Hammerstrike",
+                    "logo": "StormSpeederHammerstrike.jpeg",
+                    "points": 160,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 184,
+                    "name": "Storm Speeder Thunderstrike",
+                    "logo": "StormSpeederThunderstrike.jpeg",
+                    "points": 160,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 185,
+                    "name": "Techmarine",
+                    "logo": "Techmarine.jpeg",
+                    "points": 70,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 186,
+                    "name": "Techmarine Primaris",
+                    "logo": "TechmarinePrimaris.jpeg",
+                    "points": 65,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 187,
+                    "name": "Tor Garadon",
+                    "logo": "TorGaradon.jpeg",
+                    "points": 100,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 188,
+                    "name": "Uriel Ventris",
+                    "logo": "UrielVentris.jpeg",
+                    "points": 85,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 189,
+                    "name": "Vindicator",
+                    "logo": "Vindicator.jpeg",
+                    "points": 205,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 190,
+                    "name": "Vulkan He’stan",
+                    "logo": "VulkanHestan.jpeg",
+                    "points": 95,
+                    "keywords": [
+                        "Space Marines"
+                    ]
+                },
+                {
+                    "id": 191,
+                    "name": "Vétérans des Guerres Tyraniques",
+                    "logo": "VeteransdesGuerresTyraniques.jpeg",
+                    "points": 85,
+                    "keywords": [
+                        "Space Marines"
+                    ],
+                    "figurines": 5
+                },
+                {
+                    "id": 192,
+                    "name": "Whirlwind",
+                    "logo": "Whirlwind.jpeg",
+                    "points": 125,
+                    "keywords": [
+                        "Space Marines"
                     ]
                 }
             ]

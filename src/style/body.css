@@ -38,6 +38,11 @@ body {
   height: 100px;
   object-fit: cover;
   margin-bottom: 10px;
+  transition: transform 1s ease;
+}
+
+.unit-logo:hover{
+transform: scale(2);
 }
 
 .unit-info {

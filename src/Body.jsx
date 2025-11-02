@@ -7,7 +7,7 @@ function Body({ faction }) {
     const [type, setType] = useState("");
 
     useEffect(() => {
-        fetch('/data/unit.json')
+        fetch('/data/unit2.json')
             .then(response => response.json())
             .then(data => {
                 const factionData = data.factions.find(f => f.name === faction);

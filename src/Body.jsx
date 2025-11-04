@@ -24,25 +24,41 @@ function Body({ faction }) {
             .catch(error => console.error("Erreur:", error));
     }, [faction]);
 
-    const [army, setArmy] = useState([]);
+    const [army, setArmy] = useState(() => {
+        const savedArmy = localStorage.getItem('currentArmy');
+        if (savedArmy !== null) {
+            return JSON.parse(savedArmy);
+        } else { return []; }
+    });
 
 
     useEffect(() => {
         console.log(army);
     }, [army]);
 
-    const supprimerUnit = (index) => {
-        setArmy(ancienneArmee => ancienneArmee.filter((_, i) => i !== index));
-    };
+const supprimerUnit = (index) => {
+  setArmy((ancienneArmee) => {
+    const nouvelleArmee = ancienneArmee.filter((_, i) => i !== index);
+    localStorage.setItem('currentArmy', JSON.stringify(nouvelleArmee));
+    return nouvelleArmee;
+  });
+};
+
 
     const supprimerListe = () => {
         setArmy([]);
+        localStorage.clear();
     }
 
     const creerArmee = (unit) => {
-        setArmy(e => [...e, unit]);
-        console.log(army, totalPoint);
-    }
+        setArmy(e => {
+            const newArmy = [...e, unit];
+            localStorage.setItem('currentArmy', JSON.stringify(newArmy));
+            console.log(JSON.parse(localStorage.getItem('currentArmy')));
+            return newArmy;
+        });
+    };
+
 
     const choisirType = (e) => {
 

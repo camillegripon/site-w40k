@@ -175,6 +175,8 @@ transform: scale(2);
 .type-list-unit {
   display: flex;
   margin: auto;
+  overflow-x: auto;
+  align-items: center;
 }
 
 .type-unit {
@@ -185,6 +187,7 @@ transform: scale(2);
   border-radius: 10px;
   font-size: large;
   color: #0a1a2a;
+  margin: 5px;
 }
 
 .type-unit:active {

@@ -11,4 +11,5 @@
 
 .listeLogo {
     display: flex;
+    overflow-x: auto;
 }

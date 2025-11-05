@@ -36,13 +36,13 @@ function Body({ faction }) {
         console.log(army);
     }, [army]);
 
-const supprimerUnit = (index) => {
-  setArmy((ancienneArmee) => {
-    const nouvelleArmee = ancienneArmee.filter((_, i) => i !== index);
-    localStorage.setItem('currentArmy', JSON.stringify(nouvelleArmee));
-    return nouvelleArmee;
-  });
-};
+    const supprimerUnit = (index) => {
+        setArmy((ancienneArmee) => {
+            const nouvelleArmee = ancienneArmee.filter((_, i) => i !== index);
+            localStorage.setItem('currentArmy', JSON.stringify(nouvelleArmee));
+            return nouvelleArmee;
+        });
+    };
 
 
     const supprimerListe = () => {
@@ -155,7 +155,10 @@ const supprimerUnit = (index) => {
 
                 </div>
             </div>
-            <button className='reset' onClick={() => supprimerListe()}>Reset</button>
+            <div className='footerTableau'>
+                <input type="checkbox" id='afficherImage' /><label>Afficher image   </label>
+                <button className='reset' onClick={() => supprimerListe()}>Reset</button>
+            </div>
         </div >
     );
 }

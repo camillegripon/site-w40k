@@ -195,3 +195,6 @@ transform: scale(2);
   transform: scale(1.10);
 }
 
+.footerTableau {
+  padding: 5px;
+}

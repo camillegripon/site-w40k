@@ -168,6 +168,145 @@
             "Transport",
             "Forteresse Mobile Hekaton"
           ]
+        },
+        {
+          "id": 193,
+          "name": "Atregardes Einhyr",
+          "points": 135,
+          "logo": "AtregardesEinhyr.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 5 figurines",
+              "points": 135
+            }
+          ]
+        },
+        {
+          "id": 194,
+          "name": "Buri Aegnirssen",
+          "points": 110,
+          "logo": "BuriAegnirssen.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ]
+        },
+        {
+          "id": 195,
+          "name": "Chaudronniers Cognats de Fer avec Armes de Mêlée",
+          "points": 100,
+          "logo": "ChaudronniersCognatsDeFerAvecArmesDeMelee.jpeg",
+          "figurines": 3,
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 3 figurines",
+              "points": 100
+            }
+          ]
+        },
+        {
+          "id": 196,
+          "name": "Chaudronniers Cognats de Fer avec Désintégrateurs Volkanites Lourds",
+          "points": 80,
+          "logo": "ChaudronniersCognatsDeFerAvecDesintegrateursVolkanitesLourds.jpeg",
+          "figurines": 3,
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 3 figurines",
+              "points": 80
+            }
+          ]
+        },
+        {
+          "id": 197,
+          "name": "Défenseurs Kapricus",
+          "points": 70,
+          "logo": "DefenseursKapricus.jpeg",
+          "figurines": 1,
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 1 figurine",
+              "points": 70
+            }
+          ]
+        },
+        {
+          "id": 198,
+          "name": "Evaluateur Arkanyste",
+          "points": 65,
+          "logo": "EvaluateurArkanyste.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ]
+        },
+        {
+          "id": 199,
+          "name": "Porteur Kapricus",
+          "points": 75,
+          "logo": "PorteurKapricus.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ]
+        },
+        {
+          "id": 200,
+          "name": "Stratège Memnyr",
+          "points": 45,
+          "logo": "StrategeMemnyr.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ]
+        },
+        {
+          "id": 201,
+          "name": "Trembleterres Cthoniens",
+          "points": 95,
+          "logo": "TrembleterresCthoniens.jpeg",
+          "figurines": 2,
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ]
+        },
+        {
+          "id": 202,
+          "name": "Yaegirs Hernkogs",
+          "points": 90,
+          "logo": "YaegirsHernkogs.jpeg",
+          "figurines": 10,
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Forteresse Mobile Hekaton"
+          ]
         }
       ]
     },

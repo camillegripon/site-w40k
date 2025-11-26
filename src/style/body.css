@@ -58,6 +58,10 @@ transform: scale(2);
   color: #333;
 }
 
+.unit-info > p > button {
+  margin-left: 5px;
+}
+
 .unit-keywords {
   display: flex;
   flex-wrap: wrap;

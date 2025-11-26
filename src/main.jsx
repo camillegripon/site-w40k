@@ -19,7 +19,7 @@ function App() {
 
   }, [])
 
-  const [selectedFaction, setSelectedFaction] = useState("votann");
+  const [selectedFaction, setSelectedFaction] = useState("all");
 
   const handleFactionSelect = (faction) => {
     setSelectedFaction(faction);

@@ -7,13 +7,29 @@ function Body({ allData, faction }) {
     const [boutonImage, setBoutonImage] = useState(false);
     const [allDataAAfficher, setAllDataAAfficher] = useState(allData);
 
-useEffect(()=>{
-    console.log(allData);
-}, [])
+    useEffect(() => {
+        console.log(allData);
+        console.log(faction);
+    }, [allData, faction])
 
-if(faction){
-   // setAllDataAAfficher(allData.filter(faction));
-}
+    useEffect(() => {
+        if (faction && faction!="all") {
+            const result = allData.factions.filter((e) => e.name === faction);
+            const resultEnObjet = { factions: result };
+            setAllDataAAfficher(resultEnObjet);
+        } else if (faction == "all") {
+            setAllDataAAfficher(allData);
+        } else {
+            setAllDataAAfficher(allData);
+        }
+    }, [faction, allData.factions]);
+
+
+    useEffect(() => {
+        console.log(allDataAAfficher);
+    }, [allDataAAfficher]);
+
+
 
     /*    useEffect(() => {
             fetch('/data/unit2.json')
@@ -60,8 +76,6 @@ if(faction){
 
 
 
-
-
     const supprimerListe = () => {
         setArmy({});
         localStorage.setItem('currentArmy', JSON.stringify({}));
@@ -78,9 +92,6 @@ if(faction){
             return newArmy;
         });
     };
-
-
-
 
 
 
@@ -134,7 +145,7 @@ if(faction){
                     ))}
                 </ul>
                 <ul className="unit-list">
-                    {allData.factions.map(faction =>
+                    {allDataAAfficher.factions.map(faction =>
                         faction.units
                             .filter(unit => type === "" || unit.keywords.includes(type))
                             .map(unit => (
@@ -167,14 +178,12 @@ if(faction){
             </div>
             <div className='listeArmeeChoisie'>
                 <div className='tableArmeeChoisie'>
-                    {/* En-tête du tableau */}
                     <div className='hautTableau'>
                         <div>Unités</div>
                         <div>Points</div>
                         <div>Actions</div>
                     </div>
 
-                    {/* Liste des unités par faction */}
                     {Object.entries(army).map(([factionName, units]) =>
                         units.map((unit, index) => (
                             <div key={`${factionName}-${unit.id}`} className='unitLigne'>
@@ -195,11 +204,11 @@ if(faction){
                         ))
                     )}
 
-                    {/* Ligne du total */}
+
                     <div className='ligneTotal'>
                         <div>Total</div>
                         <div>{totalPoint} points</div>
-                        <div></div> {/* Cellule vide pour aligner avec la grid */}
+                        <div></div>
                     </div>
                 </div>
             </div>

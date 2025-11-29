@@ -10,3 +10,10 @@ Technologies utilisées
 
 React
 Python sur un autre dossier pour le Json
+
+A faire : Corriger et ajouter Votann, corriger Tau, corriger deathwatch
+Ajouter un effet au body à chaque changement
+
+A terme, rajouter les stat de chaque unité
+Rajouter les options d'équipement
+Rajouter les détachements

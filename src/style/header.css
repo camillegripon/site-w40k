@@ -7,7 +7,7 @@
 }
 
 
-#logoInfini, #logoChaos {
+#logoInfini, #logoChaos, #logoEmperorsChildren {
   filter:
     drop-shadow(0 0 1px white);
 }

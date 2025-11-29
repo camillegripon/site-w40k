@@ -192,9 +192,10 @@
           "points": 110,
           "logo": "BuriAegnirssen.jpeg",
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Infanterie",
+            "Personnage",
+            "Héros Epique",
+            "Buri Aegnirssen"
           ]
         },
         {
@@ -204,9 +205,9 @@
           "logo": "ChaudronniersCognatsDeFerAvecArmesDeMelee.jpeg",
           "figurines": 3,
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Infanterie",
+            "Chaudronniers Cognats de Fer",
+            "Chaudronniers Cognats de Fer avec Armes de Mêlée"
           ],
           "options": [
             {
@@ -222,9 +223,9 @@
           "logo": "ChaudronniersCognatsDeFerAvecDesintegrateursVolkanitesLourds.jpeg",
           "figurines": 3,
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Infanterie",
+            "Chaudronniers Cognats de Fer",
+            "Chaudronniers Cognats de Fer avec Désintégrateurs Volkanites Lourds"
           ],
           "options": [
             {
@@ -241,8 +242,10 @@
           "figurines": 1,
           "keywords": [
             "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Vol",
+            "Hernkogs",
+            "Kapricus",
+            "Défenseurs"
           ],
           "options": [
             {
@@ -257,9 +260,9 @@
           "points": 65,
           "logo": "EvaluateurArkanyste.jpeg",
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Infanterie",
+            "Personnage",
+            "Evaluateur Arkanyste"
           ]
         },
         {
@@ -270,7 +273,11 @@
           "keywords": [
             "Véhicule",
             "Transport",
-            "Forteresse Mobile Hekaton"
+            "Vol",
+            "Transport Assigné",
+            "Hernkogs",
+            "Kapricus",
+            "Porteur"
           ]
         },
         {
@@ -279,9 +286,9 @@
           "points": 45,
           "logo": "StrategeMemnyr.jpeg",
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Infanterie",
+            "Personnage",
+            "Stratège Memnyr"
           ]
         },
         {
@@ -291,9 +298,10 @@
           "logo": "TrembleterresCthoniens.jpeg",
           "figurines": 2,
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Infanterie",
+            "Artillerie",
+            "Cthoniens",
+            "Trembleterres"
           ]
         },
         {
@@ -303,9 +311,10 @@
           "logo": "YaegirsHernkogs.jpeg",
           "figurines": 10,
           "keywords": [
-            "Véhicule",
-            "Transport",
-            "Forteresse Mobile Hekaton"
+            "Hernkogs",
+            "Infanterie",
+            "Grenades",
+            "Yaegirs"
           ]
         }
       ]
@@ -504,7 +513,8 @@
             "Marcheur",
             "Chaos",
             "Démon",
-            "Ferrocerberus"
+            "Ferrocerberus",
+            "Slaanesh"
           ]
         },
         {
@@ -1050,7 +1060,11 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Grenades",
+            "Imperium",
+            "Capitaine",
+            "Capitaine Du Guet Artemis"
           ]
         },
         {
@@ -1059,9 +1073,12 @@
           "points": 180,
           "logo": "CorvusBlackstar.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Aérodyne",
+            "Vol",
+            "Imperium",
+            "Transport",
+            "Corvus Blackstar"
           ]
         },
         {
@@ -1071,8 +1088,9 @@
           "logo": "EscouadeTerminatorDeathwatch.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Imperium",
+            "Terminator",
+            "Escouade Terminator Deathwatch"
           ],
           "options": [
             {
@@ -1088,9 +1106,10 @@
           "points": 85,
           "logo": "EscouadeDeVeteransAMotos.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Monté",
+            "Grenades",
+            "Imperium",
+            "Escouade de Vétérans à Moto"
           ],
           "options": [
             {
@@ -1108,7 +1127,11 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Kill Team",
+            "Grenades",
+            "Imperium",
+            "Kill Team Cassius"
           ],
           "figurines": 11
         },
@@ -1119,8 +1142,11 @@
           "logo": "KillTeamFortis.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Kill Team",
+            "Grenades",
+            "Imperium",
+            "Tacticus",
+            "Kill Team Fortis"
           ],
           "figurines": 5,
           "options": [
@@ -1137,8 +1163,11 @@
           "logo": "KillTeamIndomitor.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Kill Team",
+            "Imperium",
+            "Gravis",
+            "Kill Team Indomitor"
           ],
           "figurines": 5,
           "options": [
@@ -1155,8 +1184,10 @@
           "logo": "KillTeamProteus.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Kill Team",
+            "Grenades",
+            "Imperium",
+            "Kill Team Proteus"
           ],
           "figurines": 5,
           "options": [
@@ -1173,8 +1204,12 @@
           "logo": "KillTeamSpectrus.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Kill Team",
+            "Fumée",
+            "Grenades",
+            "Imperium",
+            "Phobos",
+            "Kill Team Spectrus"
           ],
           "figurines": 5,
           "options": [
@@ -1192,7 +1227,10 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Imperium",
+            "Capitaine",
+            "Maître Du Guet"
           ]
         },
         {
@@ -1202,8 +1240,11 @@
           "logo": "VeteransDeathwatch.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Ligne",
+            "Kill Team",
+            "Grenades",
+            "Imperium",
+            "Vétérans Deathwatch"
           ],
           "figurines": 5,
           "options": [
@@ -1226,7 +1267,9 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Ethéré",
+            "Aun'Shi"
           ]
         },
         {
@@ -1237,7 +1280,9 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Ethéré",
+            "Aun'Va"
           ],
           "figurines": 3
         },
@@ -1247,9 +1292,10 @@
           "points": 150,
           "logo": "BombardierSunShark.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Aérodyne",
+            "Vol",
+            "Bombardier Sun Shark"
           ]
         },
         {
@@ -1259,8 +1305,9 @@
           "logo": "CarnivoresKroots.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Kroot",
+            "Carnivores"
           ],
           "figurines": 10,
           "options": [
@@ -1276,9 +1323,9 @@
           "points": 35,
           "logo": "CavaliersKrootox.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Monté",
+            "Kroot",
+            "Cavaliers Krootox"
           ],
           "options": [
             {
@@ -1297,9 +1344,9 @@
           "points": 145,
           "logo": "CharHammerhead.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Vol",
+            "Char Hammerhead"
           ]
         },
         {
@@ -1308,9 +1355,10 @@
           "points": 160,
           "logo": "CharSkyRay.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Vol",
+            "Désignateur Laser",
+            "Char Sky Ray"
           ]
         },
         {
@@ -1319,9 +1367,10 @@
           "points": 165,
           "logo": "ChasseurRazorshark.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Aérodyne",
+            "Vol",
+            "Chasseur Razorshark"
           ]
         },
         {
@@ -1330,9 +1379,9 @@
           "points": 30,
           "logo": "ChiensKroots.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Bêtes",
+            "Kroot",
+            "Chiens"
           ],
           "figurines": 4,
           "options": [
@@ -1352,9 +1401,13 @@
           "points": 120,
           "logo": "CommandantFarsight.jpeg",
           "keywords": [
-            "Infanterie",
+            "Véhicule",
+            "Marcheur",
+            "Vol",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Exo-Armure",
+            "Commandant Farsight"
           ]
         },
         {
@@ -1363,9 +1416,12 @@
           "points": 125,
           "logo": "CommandantEnExoArmureColdstar.jpeg",
           "keywords": [
-            "Infanterie",
+            "Véhicule",
+            "Marcheur",
+            "Vol",
             "Personnage",
-            "Héros Epique"
+            "Exo-Armure",
+            "Commandant en Exo-Armure Coldstar"
           ]
         },
         {
@@ -1374,9 +1430,12 @@
           "points": 110,
           "logo": "CommandantEnExoArmureCrisis.jpeg",
           "keywords": [
-            "Infanterie",
+            "Véhicule",
+            "Marcheur",
+            "Vol",
             "Personnage",
-            "Héros Epique"
+            "Exo-Armure",
+            "Commandant en Exo-Armure Crisis"
           ]
         },
         {
@@ -1385,9 +1444,12 @@
           "points": 135,
           "logo": "CommandantEnExoArmureEnforcer.jpeg",
           "keywords": [
-            "Infanterie",
+            "Véhicule",
+            "Marcheur",
+            "Vol",
             "Personnage",
-            "Héros Epique"
+            "Exo-Armure",
+            "Commandant en Exo-Armure Enforcer"
           ]
         },
         {
@@ -1397,8 +1459,11 @@
           "logo": "CommandanteShadowsun.jpeg",
           "keywords": [
             "Infanterie",
+            "Vol",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Exo-Armure",
+            "Commandante Shadowsun"
           ]
         },
         {
@@ -1409,7 +1474,9 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Désignateur Laser",
+            "Darkstrider"
           ]
         },
         {
@@ -1418,9 +1485,11 @@
           "points": 95,
           "logo": "Devilfish.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Vol",
+            "Transport",
+            "Transport Assigné",
+            "Devilfish"
           ]
         },
         {
@@ -1429,9 +1498,11 @@
           "points": 85,
           "logo": "DroneportTidewall.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Fortification",
+            "Véhicule",
+            "Transport",
+            "Vol",
+            "Droneport Tidewall"
           ]
         },
         {
@@ -1440,9 +1511,9 @@
           "points": 70,
           "logo": "DronesTactiques.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Drone",
+            "Vol",
+            "Drones Tactiques"
           ],
           "figurines": 4,
           "options": [
@@ -1463,8 +1534,11 @@
           "logo": "EquipeDAttaque.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Ligne",
+            "Grenades",
+            "Désignateur Laser",
+            "Guerrier de Feu",
+            "Equipe d'Attaque"
           ],
           "figurines": 10
         },
@@ -1475,8 +1549,11 @@
           "logo": "EquipeDeBrecheurs.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Ligne",
+            "Grenades",
+            "Désignateur Laser",
+            "Guerrier de Feu",
+            "Equipe de Brécheurs"
           ],
           "figurines": 10
         },
@@ -1487,8 +1564,9 @@
           "logo": "EquipeDeCibleurs.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Désignateur Laser",
+            "Equipe de Cibleurs"
           ],
           "figurines": 10
         },
@@ -1500,7 +1578,8 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Désignateur Laser",
+            "Equipe de Tir Furtive"
           ]
         },
         {
@@ -1511,7 +1590,7 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Ethéré"
           ]
         },
         {
@@ -1520,9 +1599,12 @@
           "points": 170,
           "logo": "ExoArmureGhostkeel.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Marcheur",
+            "Vol",
+            "Fumée",
+            "Exo-Armure",
+            "Ghostkeel"
           ]
         },
         {
@@ -1531,9 +1613,11 @@
           "points": 235,
           "logo": "ExoArmureRiptide.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Marcheur",
+            "Vol",
+            "Exo-Armure",
+            "Riptide"
           ]
         },
         {
@@ -1542,9 +1626,10 @@
           "points": 110,
           "logo": "ExoArmureBroadside.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Marcheur",
+            "Exo-Armure",
+            "Broadside"
           ],
           "options": [
             {
@@ -1563,9 +1648,11 @@
           "points": 195,
           "logo": "ExoArmureCrisis.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Marcheur",
+            "Vol",
+            "Exo-Armure",
+            "Crisis"
           ],
           "options": [
             {
@@ -1581,8 +1668,9 @@
           "logo": "ExoArmureStealth.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Vol",
+            "Exo-Armure",
+            "Stealth"
           ],
           "options": [
             {
@@ -1598,8 +1686,9 @@
           "logo": "ExorodeursKroots.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Kroot",
+            "Exorôdeurs"
           ]
         },
         {
@@ -1609,8 +1698,8 @@
           "logo": "FrelonsVespides.jpeg",
           "keywords": [
             "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Vol",
+            "Frelons Vespides"
           ]
         },
         {
@@ -1619,9 +1708,11 @@
           "points": 85,
           "logo": "LigneBouclierTidewall.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Fortification",
+            "Véhicule",
+            "Transport",
+            "Vol",
+            "Ligne-Bouclier Tidewall"
           ],
           "options": [
             {
@@ -1636,9 +1727,12 @@
           "points": 170,
           "logo": "Longstrike.jpeg",
           "keywords": [
-            "Infanterie",
+            "Véhicule",
+            "Vol",
             "Personnage",
-            "Héros Epique"
+            "Héros Epique",
+            "Vol",
+            "Longstrike"
           ]
         },
         {
@@ -1647,9 +1741,11 @@
           "points": 50,
           "logo": "MentorKroot.jpeg",
           "keywords": [
-            "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Infanterie",
+            "Kroot",
+            "Mentor"
           ]
         },
         {
@@ -1658,9 +1754,9 @@
           "points": 55,
           "logo": "Piranha.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Vol",
+            "Pirahna"
           ],
           "options": [
             {
@@ -1681,7 +1777,8 @@
           "keywords": [
             "Infanterie",
             "Personnage",
-            "Héros Epique"
+            "Grenades",
+            "Sabre de Feu"
           ]
         },
         {
@@ -1690,9 +1787,11 @@
           "points": 405,
           "logo": "Stormsurge.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Véhicule",
+            "Marcheur",
+            "Titanesque",
+            "Imposant",
+            "Stormsurge"
           ]
         },
         {
@@ -1701,9 +1800,11 @@
           "points": 90,
           "logo": "TourelleTidewall.jpeg",
           "keywords": [
-            "Infanterie",
-            "Personnage",
-            "Héros Epique"
+            "Fortification",
+            "Véhicule",
+            "Transport",
+            "Vol",
+            "Tourelle Tidewall"
           ]
         }
       ]
@@ -2157,7 +2258,6 @@
             "Fumée",
             "Imperium",
             "Dreadnought",
-            "",
             "Dreadnought Ironclad"
           ]
         },
@@ -3308,6 +3408,361 @@
             "Fumée",
             "Imperium",
             "Whirlwind"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Emperor's Children",
+      "units": [
+        {
+          "id": 203,
+          "name": "Ferrocerberus",
+          "logo": "Ferrocerberus.jpeg",
+          "points": 140,
+          "keywords": [
+            "Space Marines",
+            "Infanterie",
+            "Personnage",
+            "Héros Épique",
+            "Imperium",
+            "Capitaine",
+            "Adrax Agatone"
+          ]
+        },
+        {
+          "id": 204,
+          "name": "Fulgrim",
+          "logo": "Fulgrim.jpeg",
+          "points": 385,
+          "keywords": [
+            "Monstre",
+            "Vol",
+            "Personnage",
+            "Héros Epique",
+            "Démon",
+            "Chaos",
+            "Fulgrim",
+            "Slaanesh"
+          ]
+        },
+        {
+          "id": 205,
+          "name": "Infracteurs",
+          "logo": "Infracteurs.jpeg",
+          "points": 95,
+          "figurines": 5,
+          "keywords": [
+            "Infanterie",
+            "Ligne",
+            "Grenades",
+            "Chaos",
+            "Slaanesh",
+            "Infracteurs"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 5 figurines",
+              "points": 95
+            }
+          ]
+        },
+        {
+          "id": 206,
+          "name": "Lames Infaillibles",
+          "logo": "LamesInfaillibles.jpeg",
+          "points": 130,
+          "keywords": [
+            "Infanterie",
+            "Grenades",
+            "Chaos",
+            "Slaanesh",
+            "Lames Infaillibles"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 3 figurines",
+              "points": 130
+            }
+          ]
+        },
+        {
+          "id": 207,
+          "name": "Land Raider du Chaos",
+          "points": 240,
+          "logo": "LandRaiderDuChaos.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Fumée",
+            "Chaos",
+            "Land Raider",
+            "Slaanesh"
+          ]
+        },
+        {
+          "id": 208,
+          "name": "Lucius L'Eternel",
+          "points": 140,
+          "logo": "LuciusLEternel.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Personnage",
+            "Héros Epique",
+            "Chaos",
+            "Slaanesh",
+            "Lucius L'Eternel"
+          ]
+        },
+        {
+          "id": 209,
+          "name": "Marines du Vacarme",
+          "points": 135,
+          "logo": "MarinesDuVacarme.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Chaos",
+            "Slaanesh",
+            "Marines du Vacarme"
+          ]
+        },
+        {
+          "id": 210,
+          "name": "Métadrak",
+          "points": 195,
+          "logo": "Metadrak.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Aérodyne",
+            "Chaos",
+            "Land Raider",
+            "Vol",
+            "Slaanesh"
+          ]
+        },
+        {
+          "id": 211,
+          "name": "Prince Démon de Slaanesh",
+          "points": 195,
+          "logo": "PrinceDemonDeSlaanesh.jpeg",
+          "keywords": [
+            "Monstre",
+            "Personnage",
+            "Chaos",
+            "Démon",
+            "Slaanesh",
+            "Prince Démon"
+          ]
+        },
+        {
+          "id": 212,
+          "name": "Prince Démon de Slaanesh Ailé",
+          "points": 195,
+          "logo": "PrinceDemonDeSlaaneshAile.jpeg",
+          "keywords": [
+            "Monstre",
+            "Personnage",
+            "Chaos",
+            "Démon",
+            "Slaanesh",
+            "Prince Démon Ailé",
+            "Vol"
+          ]
+        },
+        {
+          "id": 213,
+          "name": "Rejetons du Chaos",
+          "points": 70,
+          "figurines": 2,
+          "logo": "RejetonsDuChaos.jpeg",
+          "keywords": [
+            "Bête",
+            "Chaos",
+            "Slaanesh",
+            "Rejetons du Chaos"
+          ]
+        },
+        {
+          "id": 214,
+          "name": "Rhino du Chaos",
+          "points": 75,
+          "logo": "RhinoDuChaos.jpeg",
+          "keywords": [
+            "Véhicule",
+            "Transport",
+            "Transport Assigné",
+            "Fumée",
+            "Chaos",
+            "Slaanesh",
+            "Rhino"
+          ]
+        },
+        {
+          "id": 215,
+          "name": "Seigneur Exultant",
+          "points": 85,
+          "logo": "SeigneurExultant.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Personnage",
+            "Grenades",
+            "Chaos",
+            "Slaanesh",
+            "Seigneur Exultant"
+          ]
+        },
+        {
+          "id": 216,
+          "name": "Seigneur Kakophoniste",
+          "points": 70,
+          "logo": "SeigneurKakophoniste.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Personnage",
+            "Grenades",
+            "Chaos",
+            "Slaanesh",
+            "Seigneur Kakophoniste"
+          ]
+        },
+        {
+          "id": 217,
+          "name": "Sorcier",
+          "points": 70,
+          "logo": "Sorcier.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Personnage",
+            "Psyker",
+            "Grenades",
+            "Chaos",
+            "Slaanesh",
+            "Sorcier"
+          ]
+        },
+        {
+          "id": 218,
+          "name": "Terminators Du Chaos",
+          "points": 175,
+          "logo": "TerminatorsDuChaos.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Chaos",
+            "Slaanesh",
+            "Terminator",
+            "Escouade Terminator"
+          ]
+        },
+        {
+          "id": 219,
+          "name": "Tourmenteurs",
+          "points": 95,
+          "figurines": 5,
+          "logo": "Tourmenteurs.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Ligne",
+            "Grenades",
+            "Chaos",
+            "Slaanesh",
+            "Tourmenteurs"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 5 figurines",
+              "points": 95
+            }
+          ]
+        },
+        {
+          "id": 220,
+          "name": "Charnelles",
+          "points": 130,
+          "figurines": 3,
+          "logo": "Charnelles.jpeg",
+          "keywords": [
+            "Bête",
+            "Chaos",
+            "Démon",
+            "Invoqué",
+            "Slaanesh",
+            "Charnelles"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 3 figurines",
+              "points": 130
+            }
+          ]
+        },
+        {
+          "id": 221,
+          "name": "Démonettes",
+          "points": 120,
+          "figurines": 10,
+          "logo": "Demonettes.jpeg",
+          "keywords": [
+            "Infanterie",
+            "Ligne",
+            "Chaos",
+            "Démon",
+            "Invoqué",
+            "Slaanesh",
+            "Démonettes"
+          ]
+        },
+        {
+          "id": 222,
+          "name": "Gardien Des Secrets",
+          "points": 300,
+          "logo": "GardienDesSecrets.jpeg",
+          "keywords": [
+            "Monstre",
+            "Personnage",
+            "Psyker",
+            "Chaos",
+            "Démon",
+            "Invoqué",
+            "Slaanesh",
+            "Gardien Des Secrets"
+          ]
+        },
+        {
+          "id": 223,
+          "name": "Veneuses",
+          "points": 90,
+          "figurines": 5,
+          "logo": "Veneuses.jpeg",
+          "keywords": [
+            "Monté",
+            "Chaos",
+            "Démon",
+            "Invoqué",
+            "Slaanesh",
+            "Veneuses"
+          ],
+          "options": [
+            {
+              "name": "Ajouter 5 figurines",
+              "points": 90
+            }
+          ]
+        },
+        {
+          "id": 224,
+          "name": "Shalaxi Helbane",
+          "points": 390,
+          "logo": "ShalaxiHelbane.jpeg",
+          "keywords": [
+            "Monstre",
+            "Personnage",
+            "Héros Epique",
+            "Psyker",
+            "Chaos",
+            "Démon",
+            "Invoqué",
+            "Slaanesh",
+            "Shalaxi Helbane"
           ]
         }
       ]

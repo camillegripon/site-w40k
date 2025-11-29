@@ -12,6 +12,7 @@ function Header({ onFactionSelect }) {
             <img src="/image/logo/logoDeathwatch.png" alt="Deathwatch" className="logo-faction" onClick={() => onFactionSelect("Deathwatch")} />
             <img src="/image/logo/logoTau.png" alt="Tau" className="logo-faction" onClick={() => onFactionSelect("T'au")} />
             <img src="/image/logo/logoSpaceMarines.png" alt="Space Marines" className="logo-faction" onClick={() => onFactionSelect("Space Marines")} />
+            <img src="/image/logo/EmperorsChildren.png" alt="Emperor's Children" className="logo-faction" id="logoEmperorsChildren" onClick={() => onFactionSelect("Emperor's Children")} />
         </div>
     </>
 

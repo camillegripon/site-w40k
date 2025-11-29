@@ -2,6 +2,8 @@ import '/src/style/body.css';
 import { useEffect, useState } from "react";
 
 function Body({ allData, faction }) {
+
+    const typeUnite = ["Infanterie", "Véhicule", "Personnage", "Monstre", "Vol", "Sans filtre"];
     //const [attributs, setAttributs] = useState({ keywords: [] })
     const [type, setType] = useState("");
     const [boutonImage, setBoutonImage] = useState(false);
@@ -13,7 +15,7 @@ function Body({ allData, faction }) {
     }, [allData, faction])
 
     useEffect(() => {
-        if (faction && faction!="all") {
+        if (faction && faction != "all") {
             const result = allData.factions.filter((e) => e.name === faction);
             const resultEnObjet = { factions: result };
             setAllDataAAfficher(resultEnObjet);
@@ -53,6 +55,38 @@ function Body({ allData, faction }) {
         const savedArmy = localStorage.getItem('currentArmy');
         return savedArmy ? JSON.parse(savedArmy) : {};
     });
+
+    const classerParNom = (allDataAAfficher) => {
+        const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
+            faction.units.map(unit => ({ ...unit, faction: faction.name }))
+        );
+        const unitesTriees = unitesAvecFaction.sort((a, b) =>
+            a.name.localeCompare(b.name)
+        );
+        const factionsTriees = unitesTriees.map(unit => ({
+            name: unit.faction,
+            units: [unit]
+        }));
+        setAllDataAAfficher({ factions: factionsTriees });
+    };
+
+    const classerParPoints = (allDataAAfficher) => {
+        const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
+            faction.units.map(unit => ({ ...unit, faction: faction.name }))
+        );
+        const unitesTriees = unitesAvecFaction.sort((a, b) =>
+            b.points - a.points
+        );
+        const factionsTriees = unitesTriees.map(unit => ({
+            name: unit.faction,
+            units: [unit]
+        }));
+        setAllDataAAfficher({ factions: factionsTriees });
+    };
+
+
+
+
 
 
 
@@ -121,7 +155,7 @@ function Body({ allData, faction }) {
     );
 
 
-    const typeUnite = ["Infanterie", "Véhicule", "Personnage", "Sans filtre"];
+
 
     return (
         <div className='body'>
@@ -144,6 +178,10 @@ function Body({ allData, faction }) {
                         <li key={e} className='type-unit' onClick={choisirType}>{e}</li>
                     ))}
                 </ul>
+                <div className='tri-list'>
+                    <button onClick={() => classerParNom(allDataAAfficher)}>Classer par nom</button>
+                    <button onClick={() => classerParPoints(allDataAAfficher)}>Classer par points</button>
+                </div>
                 <ul className="unit-list">
                     {allDataAAfficher.factions.map(faction =>
                         faction.units

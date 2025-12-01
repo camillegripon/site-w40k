@@ -1,5 +1,5 @@
 import '/src/style/body.css';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 function Body({ allData, faction }) {
 
@@ -8,28 +8,77 @@ function Body({ allData, faction }) {
     const [type, setType] = useState("");
     const [boutonImage, setBoutonImage] = useState(false);
     const [allDataAAfficher, setAllDataAAfficher] = useState(allData);
+    const divListUnitRef = useRef(null);
 
-    useEffect(() => {
-        console.log(allData);
-        console.log(faction);
-    }, [allData, faction])
+const slideOut = (callback) => {
+  if (!divListUnitRef.current) return;
+  const divListUnit = divListUnitRef.current;
+  divListUnit.classList.add("slide-out");
+  divListUnit.addEventListener("transitionend", () => {
+    divListUnit.classList.remove("slide-out");
+    callback(); 
+    setTimeout(()=>{
+    slideIn();
+}, 10);  
+  }, { once: true });
+};
 
-    useEffect(() => {
-        if (faction && faction != "all") {
-            const result = allData.factions.filter((e) => e.name === faction);
-            const resultEnObjet = { factions: result };
-            setAllDataAAfficher(resultEnObjet);
-        } else if (faction == "all") {
-            setAllDataAAfficher(allData);
-        } else {
-            setAllDataAAfficher(allData);
-        }
-    }, [faction, allData.factions]);
+const slideIn = () => {
+  if (!divListUnitRef.current) return;
+  const divListUnit = divListUnitRef.current;
+  void divListUnit.offsetWidth; 
+  divListUnit.classList.add("slide-in");
+  divListUnit.addEventListener("transitionend", () => {
+    divListUnit.classList.remove("slide-in");
+  }, { once: true });
+};
 
 
-    useEffect(() => {
-        console.log(allDataAAfficher);
+useEffect(() => {
+  slideOut(() => {
+    let newData;
+    if (faction && faction !== "all") {
+      newData = { factions: allData.factions.filter(e => e.name === faction) };
+      setAllDataAAfficher(newData); 
+    } else if (faction === "all") {
+      setTimeout(() => {
+        newData = allData;
+        setAllDataAAfficher(newData);
+      }, 150);
+    } else {
+      newData = allData;
+      setAllDataAAfficher(newData); 
+    }
+  });
+}, [faction, allData.factions]);
+
+
+
+    /*
+useEffect(() => {
+        if (!divListUnitRef.current) return;
+        const divListUnit = divListUnitRef.current;
+
+        divListUnit.classList.add("slide-out");
+        const handleSlideOutEnd = () => {
+            divListUnit.classList.remove("slide-out");
+            divListUnit.classList.add("slide-in");
+        };
+
+        const handleSlideInEnd = () => {
+            divListUnit.classList.remove("slide-in");
+        };
+
+        divListUnit.addEventListener("transitionend", handleSlideOutEnd, { once: true });
+        divListUnit.addEventListener("transitionend", handleSlideInEnd, { once: true });
+
+        return () => {
+            divListUnit.removeEventListener("transitionend", handleSlideOutEnd);
+            divListUnit.removeEventListener("transitionend", handleSlideInEnd);
+        };
     }, [allDataAAfficher]);
+*/
+
 
 
 
@@ -57,6 +106,7 @@ function Body({ allData, faction }) {
     });
 
     const classerParNom = (allDataAAfficher) => {
+        slideOut(()=>{
         const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
             faction.units.map(unit => ({ ...unit, faction: faction.name }))
         );
@@ -68,9 +118,11 @@ function Body({ allData, faction }) {
             units: [unit]
         }));
         setAllDataAAfficher({ factions: factionsTriees });
+        });
     };
 
     const classerParPoints = (allDataAAfficher) => {
+        slideOut(()=>{
         const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
             faction.units.map(unit => ({ ...unit, faction: faction.name }))
         );
@@ -82,17 +134,10 @@ function Body({ allData, faction }) {
             units: [unit]
         }));
         setAllDataAAfficher({ factions: factionsTriees });
+        });
+
     };
 
-
-
-
-
-
-
-    useEffect(() => {
-        console.log(army);
-    }, [army]);
 
     const supprimerUnit = (factionName, index) => {
         setArmy(prevArmy => {
@@ -130,13 +175,15 @@ function Body({ allData, faction }) {
 
 
     const choisirType = (e) => {
-
+        slideOut(()=>{
         const changement = e.target.textContent;
         if (changement !== "Sans filtre") {
-            setType(changement);
+            setTimeout(()=>{
+            setType(changement);}, 150);
         } else {
             setType("")
         }
+        });
     }
 
 
@@ -182,7 +229,7 @@ function Body({ allData, faction }) {
                     <button onClick={() => classerParNom(allDataAAfficher)}>Classer par nom</button>
                     <button onClick={() => classerParPoints(allDataAAfficher)}>Classer par points</button>
                 </div>
-                <ul className="unit-list">
+                <ul className="unit-list" ref={divListUnitRef}>
                     {allDataAAfficher.factions.map(faction =>
                         faction.units
                             .filter(unit => type === "" || unit.keywords.includes(type))

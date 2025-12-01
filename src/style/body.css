@@ -12,14 +12,29 @@ body {
   font-family: 'Orbitron', 'Arial', sans-serif;
 }
 
-
-/* Style pour la liste des unités */
 .unit-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   list-style: none;
   padding: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.unit-list.slide-out {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.unit-list.slide-in {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.unit-list.visible {
+  transform: translateX(0);
+  opacity: 1;
 }
 
 .unit-item {

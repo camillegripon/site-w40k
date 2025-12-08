@@ -12,7 +12,7 @@ function App() {
   //Chargement initial des données complètes du JSON
 
   useEffect(() => {
-    fetch('/data/unit2.json')
+    fetch('/data/unit.json')
       .then(response => response.json())
       .then(data => { setAllData(data);})
       .catch(error => console.error("Données non chargées FF TOTAL", error));

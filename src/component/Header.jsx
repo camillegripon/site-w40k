@@ -13,6 +13,8 @@ function Header({ onFactionSelect }) {
             <img src="/image/logo/logoTau.png" alt="Tau" className="logo-faction" onClick={() => onFactionSelect("T'au")} />
             <img src="/image/logo/logoSpaceMarines.png" alt="Space Marines" className="logo-faction" onClick={() => onFactionSelect("Space Marines")} />
             <img src="/image/logo/EmperorsChildren.png" alt="Emperor's Children" className="logo-faction" id="logoEmperorsChildren" onClick={() => onFactionSelect("Emperor's Children")} />
+            <img src="/image/logo/logoTyranides.png" alt="Tyranides" className="logo-faction" id="Tyranides" onClick={() => onFactionSelect("Tyranides")} />
+            <img src="/image/logo/logoAdeptusCustodes.png" alt="Adeptus Custodes" className="logo-faction" onClick={() => onFactionSelect("Adeptus Custodes")} />
         </div>
     </>
 

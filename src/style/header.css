@@ -7,7 +7,7 @@
 }
 
 
-#logoInfini, #logoChaos, #logoEmperorsChildren, #Tyranides {
+#logoInfini, #logoChaos, #logoEmperorsChildren, #Tyranides, #logoAdeptaSororitas, #logoAdeptusMechanicus {
   filter:
     drop-shadow(0 0 1px white);
 }
@@ -15,6 +15,11 @@
 .listeLogo {
     display: flex;
     overflow-x: auto;
+    max-height: 200px;
+}
+
+.listeLogo > img {
+    max-height: 100%;
 }
 
 @media (max-width: 600px) {

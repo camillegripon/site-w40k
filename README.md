@@ -11,9 +11,9 @@ Technologies utilisées
 React
 Python sur un autre dossier pour le Json
 
-A faire : Corriger et ajouter Votann, corriger Tau, corriger deathwatch
-Ajouter un effet au body à chaque changement
+A faire : Rajouter un catachan moche qui nous regarde de temps en temps
 
 A terme, rajouter les stat de chaque unité
 Rajouter les options d'équipement
 Rajouter les détachements
+Rajouter un backend pour s'inscrire et voir les armées des autres 

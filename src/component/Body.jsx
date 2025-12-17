@@ -8,6 +8,8 @@ function Body({ allData, faction }) {
     const [type, setType] = useState("");
     const [boutonImage, setBoutonImage] = useState(false);
     const {allDataAAfficher, setAllDataAAfficher, divListUnitRef} = useData();
+    const [ordreAlphabetique, setOrdreAlphabetique]= useState("ordre classique");
+    const [ordreNumerique, setOrdreNumerique] = useState("Plus vers Moins");
 
     const slideOut = (callback) => {
         if (!divListUnitRef.current) return;
@@ -81,13 +83,16 @@ function Body({ allData, faction }) {
                 faction.units.map(unit => ({ ...unit, faction: faction.name }))
             );
             const unitesTriees = unitesAvecFaction.sort((a, b) =>
-                a.name.localeCompare(b.name)
+                ordreAlphabetique === 'ordre classique'
+                ? a.name.localeCompare(b.name)
+                : b.name.localeCompare(a.name)
             );
             const factionsTriees = unitesTriees.map(unit => ({
                 name: unit.faction,
                 units: [unit]
             }));
             setAllDataAAfficher({ factions: factionsTriees });
+            setOrdreAlphabetique(ordreAlphabetique === "ordre classique" ? "ordre inversé" : "ordre classique");
         });
     };
 
@@ -97,13 +102,16 @@ function Body({ allData, faction }) {
                 faction.units.map(unit => ({ ...unit, faction: faction.name }))
             );
             const unitesTriees = unitesAvecFaction.sort((a, b) =>
-                b.points - a.points
+                ordreNumerique === "Plus vers Moins"
+                ? b.points - a.points
+                : a.points - b.points
             );
             const factionsTriees = unitesTriees.map(unit => ({
                 name: unit.faction,
                 units: [unit]
             }));
             setAllDataAAfficher({ factions: factionsTriees });
+            setOrdreNumerique(ordreNumerique === "Plus vers Moins" ? "Moins vers Plus" : "Plus vers Moins");
         });
 
     };
@@ -158,8 +166,8 @@ function Body({ allData, faction }) {
                     ))}
                 </ul>
                 <div className='tri-list'>
-                    <button onClick={() => classerParNom(allDataAAfficher)}>Classer par nom</button>
-                    <button onClick={() => classerParPoints(allDataAAfficher)}>Classer par points</button>
+                    <button onClick={() => classerParNom(allDataAAfficher)}>Classer par nom  ↨</button>
+                    <button onClick={() => classerParPoints(allDataAAfficher)}>Classer par points  ↨</button>
                 </div>
                 <ul className="unit-list" ref={divListUnitRef}>
                     {allDataAAfficher.factions.map(faction =>

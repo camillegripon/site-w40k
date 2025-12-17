@@ -1,9 +1,27 @@
 .divAnimationMoche {
-position: absolute;
-transform: translateX(-600px);
+position: fixed;
+transform: translateX(-75vw);
 transition: 0.8s ease, transform 0.5s ease;
+z-index:10;
 }
 
 .divAnimationMoche.visible {
-transform: translateX(-350px) rotate(45deg);
+transform: translateX(-17.5vw) rotate(45deg);
+
+}
+
+.divAnimationMoche img {
+  width: 12vw; 
+  min-width: 150px;
+  max-width: 300px; 
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .divAnimationMoche {
+    transform: translateX(-60vw); 
+  }
+  .divAnimationMoche.visible {
+    transform: translateX(-10vw) rotate(45deg); 
+  }
 }

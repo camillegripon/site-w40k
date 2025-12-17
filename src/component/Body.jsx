@@ -173,7 +173,7 @@ function Body({ allData, faction }) {
                                         className="unit-logo"
                                     />
                                     <div className="unit-info">
-                                        <h3>{unit.name}</h3>
+                                        <h3>{unit.figurines || 1} {unit.name}</h3>
                                         <p>
                                             {unit.points} pts
                                             <button onClick={() => creerArmee(unit, faction.name)}>

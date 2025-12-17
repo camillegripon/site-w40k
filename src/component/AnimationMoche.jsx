@@ -8,10 +8,10 @@ function AnimationMoche() {
 
     useEffect(() => {
         setHasScrolled(false);
-  if (!divListUnitRef.current) {
-    console.log("divListUnitRef.current n'est pas encore disponible");
-    return; // Sort du useEffect si la ref n'est pas prête
-  }
+        if (!divListUnitRef.current) {
+            console.log("divListUnitRef.current n'est pas encore disponible");
+            return; // Sort du useEffect si la ref n'est pas prête
+        }
         if (divListUnitRef.current && !hasScrolled) {
             const pageWidth = divListUnitRef.current.scrollHeight;
             console.log(pageWidth);
@@ -32,9 +32,9 @@ function AnimationMoche() {
         imageElement.classList.remove('visible');
     }, [allDataAAfficher]);
     return (
-    <div className='divAnimationMoche'>
-        <img src="/image/Element/moche.png" alt="Soldat de Catachan" aria-hidden='true' />
-    </div>
+        <div className='divAnimationMoche' onMouseEnter={(e)=> e.currentTarget.classList.remove('visible')}>
+            <img src="/image/Element/moche.png" alt="Soldat de Catachan" aria-hidden='true' />
+        </div>
     )
 }
 

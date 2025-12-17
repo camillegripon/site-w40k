@@ -1,0 +1,9 @@
+.divAnimationMoche {
+position: absolute;
+transform: translateX(-600px);
+transition: 0.8s ease, transform 0.5s ease;
+}
+
+.divAnimationMoche.visible {
+transform: translateX(-350px) rotate(45deg);
+}

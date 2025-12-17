@@ -12,6 +12,10 @@ body {
   font-family: 'Orbitron', 'Arial', sans-serif;
 }
 
+.body   {
+  position: relative;
+}
+
 .unit-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -192,6 +196,9 @@ transform: scale(2);
   align-items: center;
   justify-content: center;
 }
+
+
+
 
 .type-unit {
   list-style: none;

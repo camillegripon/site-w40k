@@ -1,143 +1,60 @@
 import '/src/style/body.css';
 import { useEffect, useState, useRef } from "react";
+import { useData } from './DataContext';
 
 function Body({ allData, faction }) {
 
     const typeUnite = ["Infanterie", "Véhicule", "Personnage", "Monstre", "Vol", "Sans filtre"];
-    //const [attributs, setAttributs] = useState({ keywords: [] })
     const [type, setType] = useState("");
     const [boutonImage, setBoutonImage] = useState(false);
-    const [allDataAAfficher, setAllDataAAfficher] = useState(allData);
-    const divListUnitRef = useRef(null);
+    const {allDataAAfficher, setAllDataAAfficher, divListUnitRef} = useData();
 
-const slideOut = (callback) => {
-  if (!divListUnitRef.current) return;
-  const divListUnit = divListUnitRef.current;
-  divListUnit.classList.add("slide-out");
-  divListUnit.addEventListener("transitionend", () => {
-    divListUnit.classList.remove("slide-out");
-    callback(); 
-    setTimeout(()=>{
-    slideIn();
-}, 10);  
-  }, { once: true });
-};
-
-const slideIn = () => {
-  if (!divListUnitRef.current) return;
-  const divListUnit = divListUnitRef.current;
-  void divListUnit.offsetWidth; 
-  divListUnit.classList.add("slide-in");
-  divListUnit.addEventListener("transitionend", () => {
-    divListUnit.classList.remove("slide-in");
-  }, { once: true });
-};
-
-
-useEffect(() => {
-  slideOut(() => {
-    let newData;
-    if (faction && faction !== "all") {
-      newData = { factions: allData.factions.filter(e => e.name === faction) };
-      setAllDataAAfficher(newData); 
-    } else if (faction === "all") {
-      setTimeout(() => {
-        newData = allData;
-        setAllDataAAfficher(newData);
-      }, 150);
-    } else {
-      newData = allData;
-      setAllDataAAfficher(newData); 
-    }
-  });
-}, [faction, allData.factions]);
-
-
-
-    /*
-useEffect(() => {
+    const slideOut = (callback) => {
         if (!divListUnitRef.current) return;
         const divListUnit = divListUnitRef.current;
-
         divListUnit.classList.add("slide-out");
-        const handleSlideOutEnd = () => {
+        divListUnit.addEventListener("transitionend", () => {
             divListUnit.classList.remove("slide-out");
-            divListUnit.classList.add("slide-in");
-        };
+            callback();
+            setTimeout(() => {
+                slideIn();
+            }, 10);
+        }, { once: true });
+    };
 
-        const handleSlideInEnd = () => {
+    const slideIn = () => {
+        if (!divListUnitRef.current) return;
+        const divListUnit = divListUnitRef.current;
+        void divListUnit.offsetWidth;
+        divListUnit.classList.add("slide-in");
+        divListUnit.addEventListener("transitionend", () => {
             divListUnit.classList.remove("slide-in");
-        };
+        }, { once: true });
+    };
 
-        divListUnit.addEventListener("transitionend", handleSlideOutEnd, { once: true });
-        divListUnit.addEventListener("transitionend", handleSlideInEnd, { once: true });
+    useEffect(() => {
+        slideOut(() => {
+            let newData;
+            if (faction && faction !== "all") {
+                newData = { factions: allData.factions.filter(e => e.name === faction) };
+                console.log(newData);
+                setAllDataAAfficher(newData);
+            } else if (faction === "all") {
+                setTimeout(() => {
+                    newData = allData;
+                    setAllDataAAfficher(newData);
+                }, 150);
+            } else {
+                newData = allData;
+                setAllDataAAfficher(newData);
+            }
+        });
+    }, [faction, allData.factions]);
 
-        return () => {
-            divListUnit.removeEventListener("transitionend", handleSlideOutEnd);
-            divListUnit.removeEventListener("transitionend", handleSlideInEnd);
-        };
-    }, [allDataAAfficher]);
-*/
-
-
-
-
-    /*    useEffect(() => {
-            fetch('/data/unit2.json')
-                .then(response => response.json())
-                .then(data => {
-                    const factionData = data.factions.find(f => f.name === faction);
-                    if (factionData) {
-                        setData({ units: factionData.units });
-                        console.log(factionData.units);
-                        const listeAttributsSansSet = factionData.units.flatMap(unit => unit.keywords);
-                        const listeAttributs = [...new Set(listeAttributsSansSet)];
-                        //setAttributs({ keywords: listeAttributs })
-                    } else {
-                        console.log("Faction non selectionnée");
-                    }
-                })
-                .catch(error => console.error("Erreur:", error));
-        }, [faction]);
-    */
     const [army, setArmy] = useState(() => {
         const savedArmy = localStorage.getItem('currentArmy');
         return savedArmy ? JSON.parse(savedArmy) : {};
     });
-
-    const classerParNom = (allDataAAfficher) => {
-        slideOut(()=>{
-        const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
-            faction.units.map(unit => ({ ...unit, faction: faction.name }))
-        );
-        const unitesTriees = unitesAvecFaction.sort((a, b) =>
-            a.name.localeCompare(b.name)
-        );
-        const factionsTriees = unitesTriees.map(unit => ({
-            name: unit.faction,
-            units: [unit]
-        }));
-        setAllDataAAfficher({ factions: factionsTriees });
-        });
-    };
-
-    const classerParPoints = (allDataAAfficher) => {
-        slideOut(()=>{
-        const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
-            faction.units.map(unit => ({ ...unit, faction: faction.name }))
-        );
-        const unitesTriees = unitesAvecFaction.sort((a, b) =>
-            b.points - a.points
-        );
-        const factionsTriees = unitesTriees.map(unit => ({
-            name: unit.faction,
-            units: [unit]
-        }));
-        setAllDataAAfficher({ factions: factionsTriees });
-        });
-
-    };
-
 
     const supprimerUnit = (factionName, index) => {
         setArmy(prevArmy => {
@@ -153,11 +70,42 @@ useEffect(() => {
         });
     };
 
-
-
     const supprimerListe = () => {
         setArmy({});
         localStorage.setItem('currentArmy', JSON.stringify({}));
+    };
+
+    const classerParNom = (allDataAAfficher) => {
+        slideOut(() => {
+            const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
+                faction.units.map(unit => ({ ...unit, faction: faction.name }))
+            );
+            const unitesTriees = unitesAvecFaction.sort((a, b) =>
+                a.name.localeCompare(b.name)
+            );
+            const factionsTriees = unitesTriees.map(unit => ({
+                name: unit.faction,
+                units: [unit]
+            }));
+            setAllDataAAfficher({ factions: factionsTriees });
+        });
+    };
+
+    const classerParPoints = (allDataAAfficher) => {
+        slideOut(() => {
+            const unitesAvecFaction = allDataAAfficher.factions.flatMap(faction =>
+                faction.units.map(unit => ({ ...unit, faction: faction.name }))
+            );
+            const unitesTriees = unitesAvecFaction.sort((a, b) =>
+                b.points - a.points
+            );
+            const factionsTriees = unitesTriees.map(unit => ({
+                name: unit.faction,
+                units: [unit]
+            }));
+            setAllDataAAfficher({ factions: factionsTriees });
+        });
+
     };
 
     const creerArmee = (unit, factionName) => {
@@ -172,20 +120,18 @@ useEffect(() => {
         });
     };
 
-
-
     const choisirType = (e) => {
-        slideOut(()=>{
-        const changement = e.target.textContent;
-        if (changement !== "Sans filtre") {
-            setTimeout(()=>{
-            setType(changement);}, 150);
-        } else {
-            setType("")
-        }
+        slideOut(() => {
+            const changement = e.target.textContent;
+            if (changement !== "Sans filtre") {
+                setTimeout(() => {
+                    setType(changement);
+                }, 150);
+            } else {
+                setType("")
+            }
         });
     }
-
 
     const afficherImage = (e) => {
         console.log(e.target);
@@ -201,25 +147,11 @@ useEffect(() => {
         0
     );
 
-
-
-
     return (
         <div className='body'>
-
+           
             <div className='listeArmeeDisponible'>
                 <h2>Unités disponibles</h2>
-                {/*             
-                        PAS FORCEMENT ADAPTE FINALEMENT
-                <ul>
-                    {attributs.keywords.map((keywords, index) => (
-                        <li key={index} className='unit-keywords'>
-                            {keywords}
-                        </li>
-                    ))}
-                </ul>
-*/}
-
                 <ul className='type-list-unit'>
                     {typeUnite.map(e => (
                         <li key={e} className='type-unit' onClick={choisirType}>{e}</li>

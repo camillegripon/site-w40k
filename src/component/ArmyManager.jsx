@@ -36,7 +36,7 @@ const registerArmy = async () => {
   const result = await response.json();
   if (result.success) {
     // Recharge les armées après enregistrement
-    fetch(`http://localhost/warhammer/api/armyManager/check_user_armies.php?id_user=${user.id}`)
+    fetch(`https://warhammer40k.alwaysdata.net/warhammer/api/armyManager/check_user_armies.php?id_user=${user.id}`)
       .then(response => response.json())
       .then(data => {
         if (data.success) {

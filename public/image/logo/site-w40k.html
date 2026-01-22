@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="fr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">import { injectIntoGlobalHook } from "/@react-refresh";
+injectIntoGlobalHook(window);
+window.$RefreshReg$ = () => {};
+window.$RefreshSig$ = () => (type) => type;</script>
+
+    <script type="module" src="./site-w40k_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site-w40k</title>
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="./site-w40k_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B1PJS93XQQ');
+    </script>
+  <style type="text/css" data-vite-dev-id="C:/Users/gripo/Desktop/Apprentissage/Projet/site-w40k/src/style/App.css">* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 0 !important;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/gripo/Desktop/Apprentissage/Projet/site-w40k/src/style/armyManager.css">.armyManager {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    border: solid 1px var(--votann-gold);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.mesArmees {
+    width: 30%;
+}
+
+.mesUnites {
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    width: 70%;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+}
+
+.searchResults {
+    z-index: 10;
+    overflow-y: auto;
+    max-height: 200px;
+    background-color: aliceblue;
+    color: black;
+    position: absolute;
+}
+
+.searchResults > div {
+    margin: 5px;
+}
+
+.uniteDelArmee {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/gripo/Desktop/Apprentissage/Projet/site-w40k/src/style/register.css">.containerRegister {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.enregistrement {
+    width: 50%;
+}
+
+.connexion {
+    width: 50%;
+}
+
+.ligne {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.ligne > input {
+    height: 30px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/gripo/Desktop/Apprentissage/Projet/site-w40k/src/style/body.css">:root {
+  --votann-blue: #1e5aa8;
+  --votann-orange: #ff6b00;
+  --votann-dark: #0a1a2a;
+  --votann-light: #e0e0e0;
+  --votann-gold: #d4af37;
+}
+
+body {
+  background-color: var(--votann-dark);
+  color: var(--votann-light);
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.body {
+  position: relative;
+}
+
+.unit-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  will-change: transform;
+  max-width: 1300px;
+  margin: auto
+}
+
+.unit-list.slide-out {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.unit-list.slide-in {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.unit-list.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.unit-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.unit-logo {
+  width: auto;
+  max-width: 280px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 1s ease;
+}
+
+.unit-logo:hover {
+  transform: scale(2);
+}
+
+.unit-info {
+  text-align: center;
+}
+
+.unit-info h3 {
+  margin: 5px 0;
+  color: #333;
+}
+
+.unit-info p {
+  color: #333;
+}
+
+.unit-info>p>button {
+  margin-left: 5px;
+}
+
+.unit-keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+
+.keyword {
+  background: #0066cc;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+}
+
+.logo-faction {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+}
+
+
+.tableArmeeChoisie {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hautTableau,
+.unitLigne,
+.ligneTotal {
+  display: grid;
+  grid-template-columns: 2fr 1fr 100px;
+  align-items: center;
+  padding: 10px;
+  min-height: 50px;
+}
+
+
+.hautTableau {
+  font-weight: bold;
+  background-color: var(--votann-dark);
+  border-bottom: 2px solid #444;
+}
+
+.unitLigne {
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s;
+}
+
+.unitLigne:hover {
+  background-color: #f9f9f9;
+}
+
+.unitLigne:last-child {
+  border-bottom: none;
+}
+
+.ligneTotal {
+  font-weight: bold;
+  background-color: var(--votann-dark);
+  border-top: 2px solid #444;
+}
+
+.unit-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.unit-logo-container img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+.unitName {
+  padding-left: 10px;
+}
+
+.supprimerUnit {
+  justify-self: center;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.supprimerUnit:hover {
+  background: #cc0000;
+}
+
+
+.hautTableau div,
+.unitLigne div:not(:last-child) {
+  padding: 0 5px;
+}
+
+
+.armyUnit .unitLigne div:first-child {
+  padding-left: 0;
+}
+
+
+.type-list-unit {
+  display: flex;
+  margin: auto;
+  overflow-x: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.type-unit {
+  list-style: none;
+  margin: auto;
+  background-color: var(--votann-gold);
+  padding: 8px;
+  border-radius: 10px;
+  font-size: large;
+  color: #0a1a2a;
+  margin: 5px;
+}
+
+.type-unit:active {
+  transform: scale(1.10);
+}
+
+.footerTableau {
+  padding: 5px;
+}
+
+.tri-list>button {
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.unit-options-details {
+  background-color: black;
+  display: none;
+}
+
+.unit-options-details.visible {
+  display: block;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/gripo/Desktop/Apprentissage/Projet/site-w40k/src/style/header.css">.titre {
+  color: var(--votann-gold);
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 120px;
+}
+
+.register {
+  display: flex;
+}
+
+.pseudoAfficher {
+  margin-right: 50px;
+}
+
+#logoInfini, #logoChaos, #logoEmperorsChildren, #Tyranides, #logoAdeptaSororitas, #logoAdeptusMechanicus {
+  filter:
+    drop-shadow(0 0 1px white);
+}
+
+
+.listeLogo {
+    display: flex;
+    overflow-x: auto;
+    max-height: 200px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.listeLogo > img {
+    height: 150px;
+    width: auto;
+}
+
+.navbar {
+  display: flex;
+  width: 100vw;
+  margin: 0 calc(-50vw + 50%);
+  border-bottom: 1px solid var(--votann-gold);
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: var(--votann-dark);
+  z-index: 2;
+  padding: 0;
+  top: 0;
+}
+
+.register {
+  margin-right: 30px;
+}
+
+.logo-section > img {
+  height: 100px;
+  width: auto;
+  margin-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .listeLogo img{
+    max-height: 100px;
+    max-width: 100px;
+}
+}</style><style type="text/css" data-vite-dev-id="C:/Users/gripo/Desktop/Apprentissage/Projet/site-w40k/src/style/AnimationMoche.css">.divAnimationMoche {
+position: fixed;
+transform: translateX(-75vw);
+transition: 0.8s ease, transform 0.5s ease;
+z-index:10;
+}
+
+.divAnimationMoche.visible {
+transform: translateX(-17.5vw) rotate(45deg);
+
+}
+
+.divAnimationMoche img {
+  width: 12vw; 
+  min-width: 150px;
+  max-width: 300px; 
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .divAnimationMoche {
+    transform: translateX(-60vw); 
+  }
+  .divAnimationMoche.visible {
+    transform: translateX(-10vw) rotate(45deg); 
+  }
+}
+</style></head>
+  <body>
+    <div id="root"><header class="header"><div class="navbar"><div class="logo-section"><img alt="logo de Warhammer 40k" src="./site-w40k_files/logoW40k.png"></div><div class="register"><h3 class="pseudoAfficher">c</h3><h3>Se déconnecter</h3></div></div><h1 class="titre">WARHAMMER ARMY BUILDING</h1></header><div class="armyManager"><div class="mesArmees"><p>Liste des armées</p><input placeholder="Nom de l&#39;armée" type="text" value="Vaardengaast"></div><div class="mesUnites"><input placeholder="Rechercher une unité..." type="text" value=""></div></div></div>
+    <script type="module" src="./site-w40k_files/main.jsx"></script>
+  
+
+</body></html>

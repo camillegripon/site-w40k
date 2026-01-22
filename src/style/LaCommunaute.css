@@ -1,0 +1,74 @@
+/* Conteneur principal */
+.communaute {
+  width: 90%;
+  margin: 20px auto;
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: #e0e0e0;
+  margin-top: 120px;
+}
+
+/* Tableau stylisé */
+.communaute table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(10, 20, 30, 0.9);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(30, 90, 168, 0.5);
+  border: 1px solid #1e5aa8;
+}
+
+/* En-tête du tableau */
+.communaute thead {
+  background: linear-gradient(90deg, #1e5aa8, #2a3d66);
+}
+.communaute th {
+  padding: 12px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+
+.communaute tbody tr {
+  transition: all 0.2s;
+  border-bottom: 1px solid rgba(30, 90, 168, 0.3);
+}
+.communaute tbody tr:nth-child(even) {
+  background: rgba(30, 90, 168, 0.1);
+}
+.communaute tbody tr:hover {
+  background: rgba(30, 90, 168, 0.2);
+  transform: scale(1.01);
+}
+
+
+.communaute td {
+  padding: 10px 12px;
+  text-align: center;
+}
+.communaute td:last-child {
+  font-weight: bold;
+  color: #d4af37;
+}
+
+
+.communaute td:last-child {
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
+}
+
+
+@keyframes fadeInRow {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.communaute tbody tr {
+  animation: fadeInRow 0.4s ease-out forwards;
+}
+.communaute tbody tr:nth-child(1) { animation-delay: 0.1s; }
+.communaute tbody tr:nth-child(2) { animation-delay: 0.2s; }
+.communaute tbody tr:nth-child(3) { animation-delay: 0.3s; }
+

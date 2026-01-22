@@ -10,9 +10,11 @@ body {
   background-color: var(--votann-dark);
   color: var(--votann-light);
   font-family: 'Orbitron', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.body   {
+.body {
   position: relative;
 }
 
@@ -24,6 +26,8 @@ body {
   padding: 0;
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
   will-change: transform;
+  max-width: 1300px;
+  margin: auto
 }
 
 .unit-list.slide-out {
@@ -60,8 +64,8 @@ body {
   transition: transform 1s ease;
 }
 
-.unit-logo:hover{
-transform: scale(2);
+.unit-logo:hover {
+  transform: scale(2);
 }
 
 .unit-info {
@@ -77,7 +81,7 @@ transform: scale(2);
   color: #333;
 }
 
-.unit-info > p > button {
+.unit-info>p>button {
   margin-left: 5px;
 }
 
@@ -114,7 +118,7 @@ transform: scale(2);
 .unitLigne,
 .ligneTotal {
   display: grid;
-  grid-template-columns: 2fr 1fr 100px; 
+  grid-template-columns: 2fr 1fr 100px;
   align-items: center;
   padding: 10px;
   min-height: 50px;
@@ -131,6 +135,7 @@ transform: scale(2);
   border-bottom: 1px solid #eee;
   transition: background-color 0.2s;
 }
+
 .unitLigne:hover {
   background-color: #f9f9f9;
 }
@@ -219,8 +224,17 @@ transform: scale(2);
   padding: 5px;
 }
 
-.tri-list > button {
+.tri-list>button {
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
+}
+
+.unit-options-details {
+  background-color: black;
+  display: none;
+}
+
+.unit-options-details.visible {
+  display: block;
 }

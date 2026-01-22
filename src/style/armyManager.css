@@ -1,0 +1,118 @@
+.armyManager {
+    display: flex;
+    width: 1200px;
+    margin: 120px auto 0;
+    border: 1px solid var(--votann-gold);
+    border-radius: 5px;
+    padding: 15px;
+    background-color: var(--votann-dark);
+    color: var(--votann-light);
+}
+
+.mesArmees {
+    width: 30%;
+    padding: 10px;
+    border-right: 1px solid var(--votann-gold);
+}
+
+.mesArmees p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.mesArmees input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--votann-gold);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--votann-light);
+}
+
+.mesArmees input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.AddArmy {
+    width: 100%;
+    padding: 8px;
+    background-color: var(--votann-gold);
+    color: var(--votann-dark);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.mesUnites {
+    width: 70%;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+.mesUnites input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--votann-gold);
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--votann-light);
+}
+
+.mesUnites input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.searchResults {
+    position: absolute;
+    z-index: 10;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: aliceblue;
+    color: black;
+    width: calc(70% - 30px);
+    border: 1px solid var(--votann-gold);
+    border-radius: 4px;
+    margin-top: 5px;
+    width: inherit;
+}
+
+.unitResult {
+    padding: 8px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    max-width: inherit;
+}
+
+.unitResult:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.uniteDelArmee {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    margin-top: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.enregister {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.enregister button {
+    padding: 8px 15px;
+    background-color: var(--votann-gold);
+    color: var(--votann-dark);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.enregister button:hover {
+    opacity: 0.9;
+}

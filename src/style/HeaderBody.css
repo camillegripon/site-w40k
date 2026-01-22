@@ -1,0 +1,34 @@
+.titre {
+  color: var(--votann-gold);
+  text-shadow: 0 0 5px rgba(212, 175, 55, 0.7);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 120px;
+}
+
+#logoInfini, #logoChaos, #logoEmperorsChildren, #Tyranides, #logoAdeptaSororitas, #logoAdeptusMechanicus {
+  filter:
+    drop-shadow(0 0 1px white);
+}
+
+.listeLogo {
+    display: flex;
+    overflow-x: auto;
+    max-height: 200px;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.listeLogo > img {
+    height: 150px;
+    width: auto;
+}
+
+
+@media (max-width: 600px) {
+  .listeLogo img{
+    max-height: 100px;
+    max-width: 100px;
+}
+}

@@ -7,9 +7,10 @@ function Body({ allData, faction }) {
     const typeUnite = ["Infanterie", "Véhicule", "Personnage", "Monstre", "Vol", "Sans filtre"];
     const [type, setType] = useState("");
     const [boutonImage, setBoutonImage] = useState(false);
-    const {allDataAAfficher, setAllDataAAfficher, divListUnitRef} = useData();
-    const [ordreAlphabetique, setOrdreAlphabetique]= useState("ordre classique");
+    const { allDataAAfficher, setAllDataAAfficher, divListUnitRef } = useData();
+    const [ordreAlphabetique, setOrdreAlphabetique] = useState("ordre classique");
     const [ordreNumerique, setOrdreNumerique] = useState("Plus vers Moins");
+    const optionsDetailsRefs = useRef({});
 
     const slideOut = (callback) => {
         if (!divListUnitRef.current) return;
@@ -84,8 +85,8 @@ function Body({ allData, faction }) {
             );
             const unitesTriees = unitesAvecFaction.sort((a, b) =>
                 ordreAlphabetique === 'ordre classique'
-                ? a.name.localeCompare(b.name)
-                : b.name.localeCompare(a.name)
+                    ? a.name.localeCompare(b.name)
+                    : b.name.localeCompare(a.name)
             );
             const factionsTriees = unitesTriees.map(unit => ({
                 name: unit.faction,
@@ -103,8 +104,8 @@ function Body({ allData, faction }) {
             );
             const unitesTriees = unitesAvecFaction.sort((a, b) =>
                 ordreNumerique === "Plus vers Moins"
-                ? b.points - a.points
-                : a.points - b.points
+                    ? b.points - a.points
+                    : a.points - b.points
             );
             const factionsTriees = unitesTriees.map(unit => ({
                 name: unit.faction,
@@ -150,6 +151,14 @@ function Body({ allData, faction }) {
         }
     }
 
+    const afficherOption = (unitId) => {
+        const element = optionsDetailsRefs.current[unitId];
+        if (element) {
+            element.classList.toggle('visible');
+        }
+    };
+
+
     const totalPoint = Object.values(army).reduce(
         (sum, units) => sum + units.reduce((unitSum, unit) => unitSum + unit.points, 0),
         0
@@ -157,7 +166,7 @@ function Body({ allData, faction }) {
 
     return (
         <div className='body'>
-           
+
             <div className='listeArmeeDisponible'>
                 <h2>Unités disponibles</h2>
                 <ul className='type-list-unit'>
@@ -194,6 +203,21 @@ function Body({ allData, faction }) {
                                                 <span key={index} className="keyword">{keyword}</span>
                                             ))}
                                         </div>
+                                        {unit.options && (
+                                            <div className='unit-options'>
+                                                <button onClick={() => afficherOption(unit.id)}>↓</button>
+                                                <div className="unit-options-details"
+                                                    ref={el => optionsDetailsRefs.current[unit.id] = el}   >
+                                                    {unit.options.map((option, index) => (
+                                                        <span key={index} className='unit-options-name'>
+                                                            {option.name}
+                                                            <span className="unit-options-points"> {option.points} pts</span>
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
                                     </div>
                                 </li>
                             ))
